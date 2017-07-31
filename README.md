@@ -1,3 +1,11 @@
+# Mapping for Architecture, Urbanism, and the Humanities
+
+* Columbia University | GSAPP and A&S | Fall 2017
+* Fridays 12:30-2:30pm | Studio @ Butler
+* Office hours: Tuesdays 2-4pm
+* Professor: Michelle McSweeney (mam2518)
+* Teaching Assistant: Buck Wanner (brw2103)
+
 ## Description
 
 We are in the midst of a technological revolution, resulting in seemingly endless amounts of data and the computing technologies to analyze and contextualize that data. In response, our relationship to the spaces we inhabit and those that we don't has shifted. We are challenged to make sense of spaces we have never visited, analyze data we did not collect and bring together people and ideas that have never met. As these forces propel us towards increased global awareness, we must remain critical of the tools and technologies that we use to represent, visualize, and analyze the world. 
