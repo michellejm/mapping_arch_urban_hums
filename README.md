@@ -24,9 +24,9 @@ By the end of this course, students will be able to:
 ## Grading
 
 30% Individual assignments and tutorials <br>
-15% Midterm
-15% Map critique
-30% Final project
+15% Midterm<br>
+15% Map critique<br>
+30% Final project<br>
 10% White paper
 
 ## Course Design
