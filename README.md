@@ -36,6 +36,8 @@ This course is a project-based, hybrid seminar/laboratory. Each meeting will be 
 There are weekly assignments that result from the tutorials. These are graded by submission only. You may work alone, in pairs or groups of three. Please submit them via email by Friday at 10am. If you need an extension, you must ask for it by Thursday. Extensions will not be granted on Friday. 
 * November 3: Midterm
 * November 17: Map Critique
+* December 8 & 15: Final Presentations
+* December 20: Final Project and Whitepaper
 
 ## Midterm & Final
 The Midterm leads to the final. By the midterm, you should have a question or thesis that you want to explore, analyze, or explain using some type of map, broadly defined. This will form the basis of your final project. Projects can be web, digital, or analogue, but must take the viewer through your hypothesis, argument, or story. The final project will be the execution of your research and design. The white paper will discuss the methods you used and decisions you made. Detailed descriptions will be distributed at least three weeks in advance.  
