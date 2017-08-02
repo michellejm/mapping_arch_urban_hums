@@ -94,6 +94,7 @@ Vector analysis - geoprocessing tools
 
 ### Week 6 - October 13
 Projections
+* AuthaGraph Map: https://www.wired.com/2016/11/weird-globe-folding-map-isnt-perfect-close/
 * Mapping the Digital Empire
 * Monmonier, Mark. "Elements of the Map" How to lie with maps. University of Chicago Press, 2014. 
 * Robinson, Arthur. "Map Projections." Elements of Cartography. Wiley, 1995.
