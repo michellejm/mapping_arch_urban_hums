@@ -50,10 +50,11 @@ There are weekly assignments that result from the tutorials. These are graded by
 ## Midterm & Final
 The Midterm leads to the final. By the midterm, you should have a question or thesis that you want to explore, analyze, or explain using some type of map, broadly defined. This will form the basis of your final project. Projects can be web, digital, or analogue, but must take the viewer through your hypothesis, argument, or story. The final project will be the execution of your research and design. The white paper will discuss the methods you used and decisions you made. Detailed descriptions will be distributed at least three weeks in advance.  
 
+## Readings
+Are available on the course [Zotero Library](https://www.zotero.org/groups/1596423/map_arch_urban_hums) and via Canvas. You will receive an invitation, or you can request an invitation if you do not use your uni. 
 
 ### Week 1 - September 8
 Introduction
-* Cresswell, Tim. "Early Geographies". Geographic thought: a critical introduction. John Wiley & Sons, 2012.
 * Schivelbusch, Wolfgang. "Railroad Space, Railroad Time." The railway journey: The industrialization of time and space in the nineteenth century. Univ of California Press, 2014.
 
 Organization for mapping
@@ -79,7 +80,7 @@ Making data and data types
 ### Week 4 - September 29
 Structure, agency & post-structuralism
 * Crampton, Jeremy W. "Maps as social constructions: power, communication and visualization." Progress in Human Geography 25.2 (2001): 235-252.
-* Cresswell, Tim. "Post-structural Geographies". Geographic thought: a critical introduction. John Wiley & Sons, 2012.
+
 
 Using the census
 
@@ -87,7 +88,7 @@ Using the census
 ### Week 5 - October 6
 Humanistic Geography
 * Drucker, Johanna. "Humanities approaches to graphical display." Digital Humanities Quarterly 5.1 (2011): 1-21.
-* Cresswell, Tim. "Humanistic Geographies." Geographic thought: a critical introduction. John Wiley & Sons, 2012.
+* GEOHUMANITIES Reading - one Art & one 
 
 Vector analysis - geoprocessing tools
 
