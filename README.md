@@ -42,7 +42,7 @@ By the end of this course, students will be able to:
 This course is a project-based, hybrid seminar/laboratory. Each meeting will be divided into two sections. In the first half, we will discuss one element of critical cartography based on the readings. In the second half, we will discuss the tutorial and its implications. To get the most out of the sessions, you will need to do the readings and attempt the tutorial in advance. 
 
 ## Assignments 
-There are weekly assignments that result from the tutorials. These are graded by submission only. You may work alone, in pairs or groups of three. Please submit whatever you have completed via email by Friday at 6am. You do NOT need to complete it to receive full credit. You do need to have attempted it. If you do not have anything to send, please write a 1 paragraph essay explaining how far you got and what problems you encountered. These will form the basis for the tutorial.
+There are weekly assignments that result from the tutorials. These are graded by submission only. You may work alone, in pairs or groups of three. Please submit whatever you have completed via email by Thursday night. You do NOT need to complete it to receive full credit. You do need to have attempted it. If you do not have anything to send, please write a 1 paragraph essay explaining how far you got and what problems you encountered. These will form the basis for the tutorial.
 
 Graded Assignments
 * November 3: Midterm
