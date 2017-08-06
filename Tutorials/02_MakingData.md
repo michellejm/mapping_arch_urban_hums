@@ -154,7 +154,10 @@ Answer the following questions:
 1. How many music related locations are in the Bronx?
 2. Which neighborhood has the most locations?
 
-Submit 
+### Deliverables: 
+
+** due Thursday, September 21, 2017**
+For Thursday, email your finished map composition (as a pdf or jpeg) and the answers to your questions to Michelle at mam2518@columbia.edu
 
 ______________________________________________________________________________________________________________
 
