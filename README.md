@@ -68,8 +68,8 @@ Tutorial
 * Meirelles, Isabel. "Spatial Structures: Maps", Design for information: an introduction to the histories, theories, and best practices behind effective information visualizations. Rockport publishers, 2013.
 * Gregory, Ian N. "A map is just a bad graph”: Why spatial statistics are important in historical GIS. ESRI Press: Redlands, CA, USA, 2008.
 
-Tutorial
-* Basic Mapping - Population Map
+Tutorial 01
+* Basic Mapping - [Population Map](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/01_PopulationMap.md)
 
 
 ### Week 3 | September 22 | Critical cartography
@@ -80,8 +80,8 @@ Reading
 * Harley, John Brian. "Deconstructing the map." Cartographica: The international journal for geographic information and geovisualization 26.2 (1989): 1-20.
 * Crampton, Jeremy W. "Maps as social constructions: power, communication and visualization." Progress in Human Geography 25.2 (2001): 235-252.
 
-Tutorial
-* Making data and data types
+Tutorial 02
+* [Making data and data types](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/02_MakingData.md)
 
 
 ### Week 4 | September 29 | Data
@@ -91,7 +91,7 @@ Reading
 * Daniel Rosenberg, “Data Before the Fact,” in “Raw Data” Is an Oxymoron, ed. Lisa Gitelman (Cambridge, Massachusetts ; London, England: The MIT Press, 2013), 15–40.
 * Knigge, LaDona, and Meghan Cope. "Grounded visualization: integrating the analysis of qualitative and quantitative data through grounded theory and visualization." Environment and Planning A 38.11 (2006): 2021-2037.
 
-Tutorial
+Tutorial 04
 * Using the census
 
 ### Week 5 | October 6 | Humanistic Geography
@@ -102,7 +102,7 @@ Reading
 * Dear, Michael. "Geocreativity". In GeoHumanities: Art, History, Text at the Edge of Place, ed. Michael Dear (2011) 
 * Mitchell, Peta. "‘The stratified record upon which we set our feet’: The spatial turn and the multilayering of history, geography, and geology," in (2011): 71-83.
 
-Tutorial
+Tutorial 05
 * Vector analysis - geoprocessing tools
 
 ### Week 6 | October 13 | Projections
@@ -114,7 +114,7 @@ Reading
 * Monmonier, Mark. "Elements of the Map" How to lie with maps. University of Chicago Press, 2014. 
 * Robinson, Arthur. "Map Projections." Elements of Cartography. Wiley, 1995.
 
-Tutorial
+Tutorial 06
 * Georeferencing
 
 
@@ -128,7 +128,7 @@ Reading
 * Piatti, Barbara, and Lorenz Hurni. "Cartographies of fictional worlds." Cartographic Journal 48.4 (2011): 218-223.
 * Caquard, S., Narrative Cartography: From Mapping Stories to the Narrative of Maps and Mapping
 
-Tutorial
+Tutorial 07
 * Annotation & Storytelling
 
 
@@ -136,7 +136,7 @@ Tutorial
 * Meeks, Elijiah, and Ruth Mostern. “The Politics of Territory in Song Dynasty China, 960–1276 CE.” Toward Spatial Humanities: Historical GIS and Spatial History. Ed. Ian N. Gregory and A. Geddes. Bloomington: Indiana University Press, 2014. 
 * Guldi, Jo. "The spatial turn in history". Available at: http://spatial.scholarslab.org/spatial-turn/the-spatial-turn-in-history/index.html
 
-Tutorial
+Tutorial 08
 * Time series
 
 
@@ -151,7 +151,7 @@ Reading
 * Monmonier, Mark. "Map Generalization" How to lie with maps. University of Chicago Press, 2014.
 * Monmonier, Mark. "Blunders that Mislead" How to lie with maps. University of Chicago Press, 2014.
 
-Tutorial
+Tutorial 09
 * Webmapping
 
 ### Week 11 | November 17 | Cartography and Truth
