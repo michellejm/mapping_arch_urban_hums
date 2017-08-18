@@ -1,6 +1,7 @@
 # Mapping for Architecture, Urbanism, and the Humanities
 
 * Columbia University | GSAPP and A&S | Fall 2017
+* ARCHA4122_01_2017_3
 * Fridays 12:30-2:30pm | Studio @ Butler
 * Office hours: Tuesdays 2-4pm
 * Professor: Michelle McSweeney (mam2518)
