@@ -113,7 +113,7 @@ Map
 Reading
 * Furman, Mark. "Mapping the Digital Empire: Google Earth and the process of postmodern cartography." New Media and Society, 2010. 
 * Monmonier, Mark. "Elements of the Map" How to lie with maps. University of Chicago Press, 2014. 
-* Robinson, Arthur. "Map Projections." Elements of Cartography. Wiley, 1995.
+
 
 Tutorial 06
 * Georeferencing
@@ -127,7 +127,6 @@ Reading
 * Solnit, Rebecca, and Joshua Jelly-Schapiro. "Centers and Edges." Nonstop Metropolis: A New York City Atlas. Univ of California Press, 2016.
 * kanarinka. "The City Formerly Known as Cambridge: A Institute for Infinitely Small Things." Truth and Accountability in Geographic and Historical Visualizations. Routledge, 2011.
 * Piatti, Barbara, and Lorenz Hurni. "Cartographies of fictional worlds." Cartographic Journal 48.4 (2011): 218-223.
-* Caquard, S., Narrative Cartography: From Mapping Stories to the Narrative of Maps and Mapping
 
 Tutorial 07
 * Annotation & Storytelling
