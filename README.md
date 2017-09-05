@@ -111,7 +111,7 @@ Map
 * [AuthaGraph Map](https://www.wired.com/2016/11/weird-globe-folding-map-isnt-perfect-close/)
 
 Reading
-* Mapping the Digital Empire
+* Furman, Mark. "Mapping the Digital Empire: Google Earth and the process of postmodern cartography." New Media and Society, 2010. 
 * Monmonier, Mark. "Elements of the Map" How to lie with maps. University of Chicago Press, 2014. 
 * Robinson, Arthur. "Map Projections." Elements of Cartography. Wiley, 1995.
 
