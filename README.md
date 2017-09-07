@@ -58,6 +58,11 @@ The Midterm leads to the final. By the midterm, you should have a question or th
 Are available on the course [Zotero Library](https://www.zotero.org/groups/1596423/map_arch_urban_hums) and via Canvas. You will receive an invitation, or you can request an invitation if you do not use your uni. 
 
 ### Week 1 | September 8 | Introduction
+Map 
+[Map of the canals & rail roads of the United States](https://www.loc.gov/item/98688305/) (Tanner, Henry Schenck, 1830)
+
+
+Reading
 * Schivelbusch, Wolfgang. "Railroad Space, Railroad Time." The railway journey: The industrialization of time and space in the nineteenth century. Univ of California Press, 2014.
 
 Tutorial
@@ -66,6 +71,8 @@ Tutorial
 
 
 ### Week 2 | September 15 | Maps as Spatial Visualizations
+Map
+
 * Meirelles, Isabel. "Spatial Structures: Maps", Design for information: an introduction to the histories, theories, and best practices behind effective information visualizations. Rockport publishers, 2013.
 * Gregory, Ian N. "A map is just a bad graph”: Why spatial statistics are important in historical GIS. ESRI Press: Redlands, CA, USA, 2008.
 
