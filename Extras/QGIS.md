@@ -1,6 +1,6 @@
 ## Downloading QGIS
 
-We will be using QGIS 2.14 (Essen) which is the most recent Long Term Release of the program. Please download this version of the program. 
+We will be using QGIS 2.14 (Essen) which is the most recent Long Term Release of the program. Please download this version of the program. If you donwload a newer version (or are already using an older version), there may be some incompatibitlities with the turtorials, so we suggest installing this version for use in this course.
 
 ### Instructions for PC Users
 PC users can download QGIS here and follow the instructions provided by the installer:
