@@ -75,7 +75,7 @@ Map
 * Gregory, Ian N. "A map is just a bad graph”: Why spatial statistics are important in historical GIS. ESRI Press: Redlands, CA, USA, 2008.
 
 Tutorial 01
-* Basic Mapping - [Population Map](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/01_PopulationMap.md)
+* Basic QGIS [Population Map](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/01_PopulationMap.md)
 
 
 ### Week 3 | September 22 | Critical cartography
