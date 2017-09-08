@@ -11,12 +11,12 @@ With this exercise, you will learn introductory skills involved in using QGIS to
 7. queried a GIS dataset, using both tabular queries and spatial queries 
 8. worked with projections and examined the impacts of projection transformations on spatial analysis
 
-#### Part 00
-Download the GitHub repository for this course. Using the green button [here](https://github.com/michellejm/mapping_arch_urban_hums), select `Download ZIP`. The Class_Data folder will then have all of the datasets needed for tutorials. 
+### Part 00
+Download the GitHub repository for this course. Using the green button [here](https://github.com/michellejm/mapping_arch_urban_hums), select `Download ZIP`. The Data folder will then have all of the datasets needed for tutorials. 
 
 Find instructions for installing QGIS [here](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Extras/QGIS.md). 
 
-### Mapping Data 00: Mapping World Population(s)
+### Part 01: Mapping World Population(s)
 #### Premise
 We are interested in creating a map of world countries and cities (and at the same time exploring the QGIS interface). We have a point file for the locations of populated places around the world as well as a polygon file for country boundaries. This map will serve as a basemap to which we can add additional information and layers in order to examine multiple measures of population and the differences between them.
 
@@ -71,17 +71,12 @@ When your style settings are finished, **click** `OK` to exit the properties men
 
 **Save** your QGIS project by selecting `Project` > `Save`. Name your project MappingData_Population.qgs and save it in the Tutorials/Exercises folder. QGIS projects are saved as .qgs files. It is important to note that the data layers are not saved with it the map project but are rather linked to the project.
 
-# Part II
 
-## Mapping Data 
-
-### Mapping Data 01: Mapping World Population(s) to understand the difference between multiple methods of measuring world population 
+### Part 02: Mapping World Population(s) to understand the difference between multiple methods of measuring world population 
 
 #### Premise
 
-We will work with the basemap we made in Mapping Data 00 and add new data to it in order to examine multiple measures of world population. If you have not already completed the [Mapping data 00](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/01_MappingData00.md) tutorial please do so before beginning this exercise. We will examine population aggregated to cities and countries and a raster dataset that depicts the distribution of world population at a resolution of approximately 1km. 
-
-Open your MappingData_Population.qgs map project.
+We will work with the basemap we made in Part 01 and add new data to it in order to examine multiple measures of world population. We will examine population aggregated to cities and countries and a raster dataset that depicts the distribution of world population at a resolution of approximately 1km. 
 
 We have already mapped the locations of populated places (which contains population estimates collected using [LandScan](http://web.ornl.gov/sci/landscan/)) as well as country polygons. We also have tabular data available for population at the country level from the [United Nations](http://esa.un.org/unpd/wpp/Download/Standard/Population/) which we will join to the country polygons, as well as a raster layer that describes world population in 1km grid created by CEISIN. We will answer questions about the differences between the depictions of population at the city, country, and 1km scale. 
 
@@ -232,8 +227,8 @@ In the bottom left hand corner of your QGIS window you will see that five popula
 
 ![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/20_SelectedFeatures.png)
 
-#### On Your Own
-Now on your own use select by attributes and select by location to answer the following question: 
+
+Now use select by attributes and select by location to answer the following question: 
 * How many countries contain cities with greater than 7 million inhabitants?
 
 Include the answer as part of your map composition that we will review on Tuesday.   
@@ -277,8 +272,6 @@ Now change the `Render type` to `Singleband pseudocolor` to get something simila
 
 ![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/24_Pseudo.png)
 
-
-#### On your Own
 **Choropleth**
 
 Create a choropleth map for population by country, where each country is  colored according to its population size. 
