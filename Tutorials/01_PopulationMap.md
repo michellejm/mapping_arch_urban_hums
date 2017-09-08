@@ -14,6 +14,8 @@ With this exercise, you will learn introductory skills involved in using QGIS to
 #### Part 00
 Download the GitHub repository for this course. Using the green button [here](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities), select `Download ZIP`. The Class_Data folder will then have all of the datasets needed for tutorials. 
 
+Find instructions for installing QGIS [here](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Extras/QGIS.md). 
+
 ### Mapping Data 00: Mapping World Population(s)
 #### Premise
 We are interested in creating a map of world countries and cities (and at the same time exploring the QGIS interface). We have a point file for the locations of populated places around the world as well as a polygon file for country boundaries. This map will serve as a basemap to which we can add additional information and layers in order to examine multiple measures of population and the differences between them.
