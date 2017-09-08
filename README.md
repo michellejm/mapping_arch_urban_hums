@@ -70,7 +70,9 @@ Tutorial
 
 ### Week 2 | September 15 | Maps as Spatial Visualizations
 Map
+TBD
 
+Reading
 * Meirelles, Isabel. "Spatial Structures: Maps", Design for information: an introduction to the histories, theories, and best practices behind effective information visualizations. Rockport publishers, 2013.
 * Gregory, Ian N. "A map is just a bad graph”: Why spatial statistics are important in historical GIS. ESRI Press: Redlands, CA, USA, 2008.
 
@@ -80,6 +82,7 @@ Tutorial 01
 
 ### Week 3 | September 22 | Critical cartography
 Map
+TDB
 
 Reading
 * Crampton, J. W. and Krygier, J. (2006). “An introduction to critical cartography.” ACME 4 (1): 11-53
@@ -92,6 +95,7 @@ Tutorial 02
 
 ### Week 4 | September 29 | Data
 Map
+TBD
 
 Reading
 * Daniel Rosenberg, “Data Before the Fact,” in “Raw Data” Is an Oxymoron, ed. Lisa Gitelman (Cambridge, Massachusetts ; London, England: The MIT Press, 2013), 15–40.
