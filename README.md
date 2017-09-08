@@ -9,7 +9,6 @@
 
 ## Description
 
-
 We are in the midst of a technological revolution, resulting in seemingly endless amounts of data and the computing technologies to analyze and contextualize that data. In response, our relationship to the spaces we inhabit and those that we don't has shifted. We are challenged to make sense of spaces we have never visited, analyze data we did not collect and bring together people and ideas that have never met. As these forces propel us towards increased global awareness, we must remain critical of the tools and technologies that we use to represent, visualize, and analyze the world. 
 
 This course provides an introduction to critical mapping theory and geographic information systems tools. Of particular interest to Humanities students, this course seeks to address both historical and contemporary questions with reference to space and mapping. Through the use of open-source GIS software (qGIS) and open data (OpenStreetMap) students will learn how to critically use mapping tools and geographic data for spatial analysis and representation. In addition to using existing data, students will also be able to create or bring their own sets of data and questions from other courses and will be able to work with these in our class. 
@@ -25,7 +24,6 @@ By the end of this course, students will be able to:
 * Critically apply mapping theory to spatial projects
 * Make intentional design decisions when composing maps for publication
 * Decide when to use a static map and when to use a webmap
-
 * Use QGIS to analyze geographic information
 * Strategically use maps and layers to tell a story
 * Find and clean datasets for use in GIS
@@ -58,16 +56,16 @@ The Midterm leads to the final. By the midterm, you should have a question or th
 Are available on the course [Zotero Library](https://www.zotero.org/groups/1596423/map_arch_urban_hums) and via Canvas. You will receive an invitation, or you can request an invitation if you do not use your uni. 
 
 ### Week 1 | September 8 | Introduction
-Map 
 [Map of the canals & rail roads of the United States](https://www.loc.gov/item/98688305/) (Tanner, Henry Schenck, 1830)
 
 
 Reading
-* Schivelbusch, Wolfgang. "Railroad Space, Railroad Time." The railway journey: The industrialization of time and space in the nineteenth century. Univ of California Press, 2014.
+* [Schivelbusch, Wolfgang](https://www.zotero.org/groups/1596423/map_arch_urban_hums/items/collectionKey/T45337B3/itemKey/ESBVIUQ8). "Railroad Space, Railroad Time." The railway journey: The industrialization of time and space in the nineteenth century. Univ of California Press, 2014.
 
 Tutorial
 * Organization for mapping
 * Personal Spaces
+* [Download QGIS](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Extras/QGIS.md)
 
 
 ### Week 2 | September 15 | Maps as Spatial Visualizations
