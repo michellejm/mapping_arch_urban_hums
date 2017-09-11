@@ -102,7 +102,7 @@ Reading
 * Knigge, LaDona, and Meghan Cope. "Grounded visualization: integrating the analysis of qualitative and quantitative data through grounded theory and visualization." Environment and Planning A 38.11 (2006): 2021-2037.
 
 Tutorial 04
-* Using the census
+* [Using the census](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/03CensusData.md)
 
 ### Week 5 | October 6 | Humanistic Geography
 Maps
@@ -125,7 +125,7 @@ Reading
 
 
 Tutorial 06
-* Georeferencing
+* [Georeferencing](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/06Georeferencing.md)
 
 
 ### Week 7 | October 20 | Literary (& imaginary) mapping
