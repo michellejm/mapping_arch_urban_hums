@@ -101,7 +101,7 @@ Reading
 * Daniel Rosenberg, “Data Before the Fact,” in “Raw Data” Is an Oxymoron, ed. Lisa Gitelman (Cambridge, Massachusetts ; London, England: The MIT Press, 2013), 15–40.
 * Knigge, LaDona, and Meghan Cope. "Grounded visualization: integrating the analysis of qualitative and quantitative data through grounded theory and visualization." Environment and Planning A 38.11 (2006): 2021-2037.
 
-Tutorial 04
+Tutorial 03
 * [Using the census](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/03CensusData.md)
 
 ### Week 5 | October 6 | Humanistic Geography
@@ -112,7 +112,7 @@ Reading
 * Dear, Michael. "Geocreativity". In GeoHumanities: Art, History, Text at the Edge of Place, ed. Michael Dear (2011) 
 * Mitchell, Peta. "‘The stratified record upon which we set our feet’: The spatial turn and the multilayering of history, geography, and geology," in (2011): 71-83.
 
-Tutorial 05
+Tutorial 04
 * Vector analysis - geoprocessing tools
 
 ### Week 6 | October 13 | Projections
@@ -124,7 +124,7 @@ Reading
 * Monmonier, Mark. "Elements of the Map" How to lie with maps. University of Chicago Press, 2014. 
 
 
-Tutorial 06
+Tutorial 05
 * [Georeferencing](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/06Georeferencing.md)
 
 
@@ -137,7 +137,7 @@ Reading
 * kanarinka. "The City Formerly Known as Cambridge: A Institute for Infinitely Small Things." Truth and Accountability in Geographic and Historical Visualizations. Routledge, 2011.
 * Piatti, Barbara, and Lorenz Hurni. "Cartographies of fictional worlds." Cartographic Journal 48.4 (2011): 218-223.
 
-Tutorial 07
+Tutorial 06
 * Annotation & Storytelling
 
 
@@ -145,7 +145,7 @@ Tutorial 07
 * Meeks, Elijiah, and Ruth Mostern. “The Politics of Territory in Song Dynasty China, 960–1276 CE.” Toward Spatial Humanities: Historical GIS and Spatial History. Ed. Ian N. Gregory and A. Geddes. Bloomington: Indiana University Press, 2014. 
 * Guldi, Jo. "The spatial turn in history". Available at: http://spatial.scholarslab.org/spatial-turn/the-spatial-turn-in-history/index.html
 
-Tutorial 08
+Tutorial 07
 * Time series
 
 
@@ -160,7 +160,7 @@ Reading
 * Monmonier, Mark. "Map Generalization" How to lie with maps. University of Chicago Press, 2014.
 * Monmonier, Mark. "Blunders that Mislead" How to lie with maps. University of Chicago Press, 2014.
 
-Tutorial 09
+Tutorial 08
 * Webmapping
 
 ### Week 11 | November 17 | Cartography and Truth
@@ -170,7 +170,7 @@ Reading
 * Wallace, Timothy R., and Charles van den Heuvel. "Truth and accountability in geographic and historical visualizations." The Cartographic Journal 42.2 (2005): 173-181.
 * Robinson, Arthur. "Nature of Cartography." Elements of Cartography. Wiley, 1995.
 
-Tutorial
+Tutorial 09
 * Cartography - MAP CRITIQUE DUE
 
 
