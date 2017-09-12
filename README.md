@@ -56,7 +56,7 @@ The Midterm leads to the final. By the midterm, you should have a question or th
 Are available on the course [Zotero Library](https://www.zotero.org/groups/1596423/map_arch_urban_hums) and via Canvas. You will receive an invitation, or you can request an invitation if you do not use your uni. 
 
 ### Week 1 | September 8 | Introduction
-[Map of the canals & rail roads of the United States](https://www.loc.gov/item/98688305/) (Tanner, Henry Schenck, 1830)
+[Maps from class](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Extras/slides/week1-mauh-slides.pdf)
 
 
 Reading
