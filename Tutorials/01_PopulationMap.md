@@ -237,7 +237,6 @@ Include the answer as part of your map composition that we will review on Tuesda
 
 Now that we have these three different layers we can begin to create maps that highlight the differences between these different ways to measure population. We will compose a map that symbolizes each of our three data layers differently. We will use graduated symbols to express city population, a choropleth map for population by country and a classified color ramp for the gridded population. We will then go over cartographic conventions adding a legend and scale bar to the map and exporting as a PDF. 
 
-*Follow along as we demo this next section, and then create your map composition on your own. Be ready to discuss it in class next week.*
 
 **Proportional  symbols**
 
@@ -248,7 +247,17 @@ Choose Graduated Symbols. Select pop_max as the column, and Natural Breaks (Jenk
 
 ![Attribute](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/21_Graduate.png)
 
+**VERSION ISSUE** If the option below doesn't exist, go to the next version's directions
 **Click** on the Advanced dropdown menu in the bottom right and navigate to the `Size scale field` option. Select `pop_max`. **Click** `Apply`. You’ll notice that the circles are huge and fill up the entire screen. Return to the `Size scale field` and now select `expression`. In the expression builder window that opens write the following `“pop_max” / 1000000`. Click `Okay` in the expression builder then click `Apply`. Click Okay to close the Properties window. 
+
+**VERSION 2**
+**Click** on 'Simple Marker' and then next to the size option, there is a small icon. If you hover over it, it will show that the 'data defined override is off' click the icon to turn it on, then select 'Size Assistant'
+
+![blank](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef3-11.png)
+
+In the pop up box, select the pop_max filed and Flannery classification
+
+![blank](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef3-12.png)
 
 The outcome of your selections should look something like this:
 
@@ -258,7 +267,7 @@ The outcome of your selections should look something like this:
 
 Next we will symbolize our gridded population of the world layer. This layer is different from the ones we have been primarily working with thus far because it is a raster dataset. 
 
-As we discussed briefly in the lecture a raster is a data layer that is composed of a grid of cells, or pixels, of a specific size where each cell has a value that represents information. In our case each cell has a value for population. Unlike a vector data layer which has an attribute table and each point, line or polygon can have multiple values associated with it, a raster grid cell can only have one value. Examples of other types of raster datasets include, temperature gradients, satellite images, and scanned historical maps. 
+A raster is a data layer that is composed of a grid of cells, or pixels, of a specific size where each cell has a value that represents information. In our case each cell has a value for population. Unlike a vector data layer which has an attribute table and each point, line or polygon can have multiple values associated with it, a raster grid cell can only have one value. Examples of other types of raster datasets include, temperature gradients, satellite images, and scanned historical maps. 
 
 If it isn’t already check the box next to the gridded population layer, gpw-v4-population-count-2010, to make it visible if it is not the top layer drag it in the Layers menu so that it is the top visible layer. It will largely be black. Now open the properties menu for the gridded population layer. Navigate to the style tab. You’ll notice that this looks different than the style menu we have been working with for our vector layers. Instead of a symbol type we have an option for ‘Render type’ and many options for how to color the bands in our dataset. 
 
