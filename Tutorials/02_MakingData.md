@@ -65,7 +65,7 @@ You should now see the data only for 'Noise' complaints created between the star
   * nybb
   * Roadbed
   * HYDRO (file may read as "Hydrography")
-  * hydropol (file may read as "hydrolin")
+  * hydropol (inside folder named "hydrolin", but use "hydropol.shp")
 * Organize your layers so that you have the roads on top, then water for New York, then boroughs and the last the water for the country.
 * Now, to add the CSV file we downloaded, click on the `Add Delimited Text Layer` button on the top toolbar.
 
