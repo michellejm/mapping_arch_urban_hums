@@ -64,8 +64,8 @@ You should now see the data only for 'Noise' complaints created between the star
 * First, open qGIS and add the following layers (as vector layers):
   * nybb
   * Roadbed
-  * HYDRO
-  * hydropol
+  * HYDRO (file may read as "Hydrography")
+  * hydropol (file may read as "hydrolin")
 * Organize your layers so that you have the roads on top, then water for New York, then boroughs and the last the water for the country.
 * Now, to add the CSV file we downloaded, click on the `Add Delimited Text Layer` button on the top toolbar.
 
