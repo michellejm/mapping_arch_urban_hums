@@ -61,7 +61,7 @@ You should now see the data only for 'Noise' complaints created between the star
 * If you open your .csv file in Excel you will see that there are about 31,060 records and that they have both X and Y coordinates and Latitude and Longitude. In the next steps we will use these fields to add the 311 data to a qGIS map.
 
 #### Adding CSV data to qGIS
-* First, open qGIS and add the following layers (downloaded for the first tutorial):
+* First, open qGIS and add the following layers:
   * nybb
   * Roadbed
   * HYDRO
