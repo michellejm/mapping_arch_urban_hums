@@ -69,8 +69,7 @@ Tutorial
 
 
 ### Week 2 | September 15 | Maps as Spatial Visualizations
-Map
-TBD
+[Maps from class](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Extras/slides/week2-mauh-slides.pdf)
 
 Reading
 * Meirelles, Isabel. "Spatial Structures: Maps", Design for information: an introduction to the histories, theories, and best practices behind effective information visualizations. Rockport publishers, 2013.
