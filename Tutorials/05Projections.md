@@ -1,4 +1,4 @@
-## Tutorial 04 - Working with Projections
+## Working with Projections
 *Tutorial created by Emily Fuhrman (ef2512@columbia.edu) for the [Mapping for Architecture, Urbanism and the Humanities](https://github.com/juanfrans-courses/mapping_arch_hum) class at Columbia University*
 
 Projections enable us to represent the earth on a flat surface. The WGS84 Geographic Coordinate System is the default projection in QGIS. This tutorial will walk through the process of creating a U.S. population density map in the Albers equal-area conic projection, a standard way of representing the United States with minimal distortion.
