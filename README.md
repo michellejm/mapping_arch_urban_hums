@@ -124,7 +124,7 @@ Reading
 
 
 Tutorial 05
-* [Georeferencing](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/06Georeferencing.md)
+* [Projections](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/05Projections.md)
 
 
 ### Week 7 | October 20 | Literary (& imaginary) mapping
@@ -137,7 +137,7 @@ Reading
 * Piatti, Barbara, and Lorenz Hurni. "Cartographies of fictional worlds." Cartographic Journal 48.4 (2011): 218-223.
 
 Tutorial 06
-* Annotation & Storytelling
+* [Georeferencing](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/06Georeferencing.md)
 
 
 ### Week 8 | October 27 | Historical Maps
@@ -145,7 +145,7 @@ Tutorial 06
 * Guldi, Jo. "The spatial turn in history". Available at: http://spatial.scholarslab.org/spatial-turn/the-spatial-turn-in-history/index.html
 
 Tutorial 07
-* Time series
+* [Annotation & Storytelling](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/07Annotation_Storytelling.md)
 
 
 ### Week 9 | November 3 
