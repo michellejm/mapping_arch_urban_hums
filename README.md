@@ -89,7 +89,7 @@ Reading
 * Crampton, Jeremy W. "Maps as social constructions: power, communication and visualization." Progress in Human Geography 25.2 (2001): 235-252.
 
 Tutorial 02
-* [Making data and data types](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/02_MakingData.md)
+* [Data types & Quantitative 311 Maps](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/02_MakingData.md)
 
 
 ### Week 4 | September 29 | Data
