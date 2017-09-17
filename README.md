@@ -112,7 +112,7 @@ Reading
 * Mitchell, Peta. "‘The stratified record upon which we set our feet’: The spatial turn and the multilayering of history, geography, and geology," in (2011): 71-83.
 
 Tutorial 04
-* Vector analysis - geoprocessing tools
+* [Vector analysis tools](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/04AnalysisTools.md)
 
 ### Week 6 | October 13 | Projections
 Map
