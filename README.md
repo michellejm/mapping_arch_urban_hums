@@ -84,9 +84,12 @@ Map
 TDB
 
 Reading
-* Crampton, J. W. and Krygier, J. (2006). “An introduction to critical cartography.” ACME 4 (1): 11-53
 * Harley, John Brian. "Deconstructing the map." Cartographica: The international journal for geographic information and geovisualization 26.2 (1989): 1-20.
+* Crampton, J. W. and Krygier, J. (2006). “An introduction to critical cartography.” ACME 4 (1): 11-53
+
+Further reading:
 * Crampton, Jeremy W. "Maps as social constructions: power, communication and visualization." Progress in Human Geography 25.2 (2001): 235-252.
+
 
 Tutorial 02
 * [Data types & Quantitative 311 Maps](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/02_MakingData.md)
