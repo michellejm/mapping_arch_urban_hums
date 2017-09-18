@@ -79,7 +79,7 @@ You should now see the data only for 'Noise' complaints created between the star
 
 ![CSV Menu](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Fall_2016/Tutorials/Images/02_Data_Types_and_311/04_CSV_Menu.png)
 * Once you click `OK` you might get a warning that says that x number of records were discarded because they didn't have geometry definitions. Click `Close`. There might be some records in the dataset that we downloaded that for some reason didn't include location data.
-* Next, qGIS will ask you to select a coordinate reference system (map projection) for this layer. Since we are adding this data based on the latitude and longitude information (decimal degrees, as opposed to feet) we need to select the `WGS 84`, which is the coordinate system that will correctly interpret this data. You will find it under `Geographic Coordinate Systems`. You will find more information on this coordinate system [here](https://en.wikipedia.org/wiki/World_Geodetic_System). Once you select the correct coordinate system, your points will appear on the map.
+* Next, qGIS will ask you to select a coordinate reference system (map projection) for this layer. Since we are adding this data based on the latitude and longitude information (decimal degrees, as opposed to feet) we need to select the `WGS 84`, which is the coordinate system that will correctly interpret this data <!--see note at line 106-->. You will find it under `Geographic Coordinate Systems`. You will find more information on this coordinate system [here](https://en.wikipedia.org/wiki/World_Geodetic_System). Once you select the correct coordinate system, your points will appear on the map.
 * Even though your points are already on the map, this is just a temporary layer. If you remove the layer, you will need to go through the whole importing process to add them again. To avoid this, we need to export the layer as a shapefile.
 * However before you export it, you need to select only the records that have actual coordinate data. If you open the attribute table and look at the `Latitude` or `Longitude` fields you will notice that some entries don't have any geographic data (they are `Null`). We need, therefore, to select only the features that have geographic information and export only those:
   * Open the attribute table and click on the `Select features using an expression` button.
@@ -103,7 +103,7 @@ You should now see the data only for 'Noise' complaints created between the star
   * In the menu choose the following:
     * Format: `ESRI Shapefile` - (this is the same format of our other layers)
     * Save as: choose the right location and name your file '311_Data'
-    * CRS: `EPSG:102718 - NAD_1983_StatePlane_New_York_Long_Island_FIPS_3104_Feet` - (this is the coordinate system we are working with and we want this layer to have the same one)
+    * CRS: `EPSG:102718 - NAD_1983_StatePlane_New_York_Long_Island_FIPS_3104_Feet` - (this is the coordinate system we are working with and we want this layer to have the same one)<!--line 82, says crs = WGS 84, which is epsg:4326-->
     * Make sure you are checking the option that says `Save only selected features`, otherwise you will get an error.
     * Uncheck `Skip attribute creation` - (you still want to retain the attributes associated with each point)
     * Check `Add saved file to map` - (so that once you export the layer, the layer is added to your map)
@@ -141,7 +141,7 @@ Let's say you want to identify which census block group has the highest number o
   * Finally, to create a shapefile with only the selected features, right-click on the census block group layer and select `Save As...`. In the next menu choose the following settings:
     * Format: `ESRI Shapefile`
     * Save as: choose the right location and name your file 'NYC_BlkGrp'
-    * CRS: `EPSG:102718 - NAD_1983_StatePlane_New_York_Long_Island_FIPS_3104_Feet`
+    * CRS: `EPSG:102718 - NAD_1983_StatePlane_New_York_Long_Island_FIPS_3104_Feet`<!--this is another instance of the CRS being different-->
     * Check `Save only selected features` - (this one is very important; if you don't check it you will just export a copy of your original layer with all the features, selected or not)
     * Uncheck `Skip attribute creation` - (you still want to retain the attributes associated with each point)
     * Check `Add saved file to map` - (so that once you export the layer, the layer is added to your map)
@@ -170,8 +170,8 @@ Let's say you want to identify which census block group has the highest number o
 Lastly, we need to hide the census block groups that fall outside of the New York City borough boundaries. If you look closely at the census block group layer, you will see that there are some block groups that fall inside the Hudson River and that shouldn't be included in our map.
 
 There are a couple of ways of doing this: one option would be to clip the block group layer using the borough layer, in order to get rid of the census block groups that fall outside the boroughs. However, this option would permanently modify the block group layer and, if at any point the borough boundaries don't align perfectly with the block groups (which is entirely possible), the geometry of those block groups would be changed too. The best option then is to hide the block groups that fall inside the water and conveniently enough there is a field in the block group attribute table that has a specific value for these features.
-* First, open the attribute table of the census block group layer. You will notice that there is a field called 'ALAND' and another called 'AWATER'. 'ALAND' one has a unique identifier for each of the block groups that has some land area; 'AWATER' has an identifier for those block groups that have some water. There problem is that some block groups have both water and land. So we will only show those block groups where the 'ALAND' field does not equal 0, meaning that they have some land.
-* To do this we will create a 'Feature subset'. Open the layer properties and go to the `General` tab. At the bottom of this tab you will see the 'Feature subset' panel. Go to the bottom of this panel and click on the `Query Builder` button. This query builder will work in a similar way as the 'Selection by attributes' query builder.
+* First, open the attribute table of the 311_BlkGroup layer. You will notice that there is a field called 'ALAND' and another called 'AWATER'. 'ALAND' one has a unique identifier for each of the block groups that has some land area; 'AWATER' has an identifier for those block groups that have some water. There problem is that some block groups have both water and land. So we will only show those block groups where the 'ALAND' field does not equal 0, meaning that they have some land.
+* To do this we will create a 'Feature subset'. Open the layer properties and go to the `General` tab. At the bottom of this tab you will see the 'Provider Feature filter' panel. Go to the bottom of this panel and click on the `Query Builder` button. This query builder will work in a similar way as the 'Selection by attributes' query builder.
 * In the 'Fields' panel you will see the 'ALAND' field. Double-click on this to make it appear in the bottom panel ('Provider specific filter expression').
 * Now add '!= 0' to the expression. ('!=' means 'does not equal').
 * Your expression should look something like this:
