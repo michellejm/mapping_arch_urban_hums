@@ -35,7 +35,7 @@ The main dataset we will be using in this tutorial is based on 311 data. 311 is 
 
 The dataset is a great resource for anyone studying New York. **Nevertheless, a word of caution is necessary**: many people use this dataset to describe and analyze conditions in New York; however, the 311 data doesn't describe the city, it describes the complaints people file, it is not about the city, it is about the complaints, and even though the complaints might tell us something about the city, the distinction is crucial. Every dataset has its own biases and the 311 dataset has very strong ones: it collects data ONLY about the people who complain and ONLY about what they choose to complain about. Again, this dataset is much more about the complaints and the people who complain than about the conditions in the city. There is no 1 to 1 relationship between the 311 complaints and the conditions in the ground. That being said, though, it is still a great resource and very fun to play with. You can find out more about the 311 service [here](http://www1.nyc.gov/311/).
 
-Other datasets we will be using are (some of these you already downloaded for the first tutorial):
+Other datasets we will be using are:
 * nybb - New York City boroughs. Originally downloaded from [here](http://www.nyc.gov/html/dcp/html/bytes/districts_download_metadata.shtml).
 * Roadbed - New York roadbed. Originally downloaded [here](https://data.cityofnewyork.us/City-Government/Roadbed/xgwd-7vhd).
 * HYDRO - New York hydrography. Originally downloaded [here](https://data.cityofnewyork.us/Environment/Hydrography/drh3-e2fd).
@@ -61,11 +61,11 @@ You should now see the data only for 'Noise' complaints created between the star
 * If you open your .csv file in Excel you will see that there are about 31,060 records and that they have both X and Y coordinates and Latitude and Longitude. In the next steps we will use these fields to add the 311 data to a qGIS map.
 
 #### Adding CSV data to qGIS
-* First, open qGIS and add the following layers (downloaded for the first tutorial):
+* First, open qGIS and add the following layers (as vector layers):
   * nybb
   * Roadbed
-  * HYDRO
-  * hydropol
+  * HYDRO (file may read as "Hydrography")
+  * hydropol (inside folder named "hydrolin", but use "hydropol.shp")
 * Organize your layers so that you have the roads on top, then water for New York, then boroughs and the last the water for the country.
 * Now, to add the CSV file we downloaded, click on the `Add Delimited Text Layer` button on the top toolbar.
 
@@ -114,7 +114,7 @@ The last step in creating a qualitative map of the 311 data is a simple one: we 
 * Right-click on the 311_Data layer and choose `Properties`.
 * In the `Style` tab, change the drop-down menu that says `Single Symbol` to `Categorized` and then in the `Column` menu select `Descriptor` (this is the field we will symbolize).
 * Now click on the `Classify` button at the bottom and you will get all the different sub-categories.
-* Lastly, you should change the appearance of the dots: adjust their size, stroke and fill color<!--look for link to connect here?-->.
+* Lastly, you should change the appearance of the dots: adjust their size, stroke and fill color<!--maybe find link to describe this-->.
 * Once you've adjusted that, click 'OK'.
 * Finally, you need to change the appearance of the other layers, create a print composer, add a scale bar, legend, title, source and brief description, and export your map as a PDF file.
 
@@ -185,4 +185,4 @@ Once you are finished with this go ahead and adjust colors, strokes and layer or
 ![Final Map](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Fall_2016/Tutorials/Images/02_Data_Types_and_311/11_Final_Map.png)
 
 #### Deliverables
-Upload two (PDF) 311 data maps to Courseworks. They should both be of something different than 'noise' complaints. One should be a qualitative map, showing the location of each complaint, and the other should be a quantitative map, showing the number of complaints per census block group in New York City. Your maps should include proper legends, scale bars, titles, explanations and sources. Choose colors, line weights and fonts wisely.
+Upload your (PDF) 311 data map to Courseworks. Your map should include proper legends, scale bars, titles, explanations and sources.

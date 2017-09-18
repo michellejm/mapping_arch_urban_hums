@@ -69,8 +69,7 @@ Tutorial
 
 
 ### Week 2 | September 15 | Maps as Spatial Visualizations
-Map
-TBD
+[Maps from class](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Extras/slides/week2-mauh-slides.pdf)
 
 Reading
 * Meirelles, Isabel. "Spatial Structures: Maps", Design for information: an introduction to the histories, theories, and best practices behind effective information visualizations. Rockport publishers, 2013.
@@ -85,12 +84,15 @@ Map
 TDB
 
 Reading
-* Crampton, J. W. and Krygier, J. (2006). “An introduction to critical cartography.” ACME 4 (1): 11-53
 * Harley, John Brian. "Deconstructing the map." Cartographica: The international journal for geographic information and geovisualization 26.2 (1989): 1-20.
+* Crampton, J. W. and Krygier, J. (2006). “An introduction to critical cartography.” ACME 4 (1): 11-53
+
+Further reading:
 * Crampton, Jeremy W. "Maps as social constructions: power, communication and visualization." Progress in Human Geography 25.2 (2001): 235-252.
 
+
 Tutorial 02
-* [Making data and data types](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/02_MakingData.md)
+* [Data types & Quantitative 311 Maps](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/02_MakingData.md)
 
 
 ### Week 4 | September 29 | Data
@@ -113,7 +115,7 @@ Reading
 * Mitchell, Peta. "‘The stratified record upon which we set our feet’: The spatial turn and the multilayering of history, geography, and geology," in (2011): 71-83.
 
 Tutorial 04
-* Vector analysis - geoprocessing tools
+* [Vector analysis tools](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/04AnalysisTools.md)
 
 ### Week 6 | October 13 | Projections
 Map
@@ -125,7 +127,7 @@ Reading
 
 
 Tutorial 05
-* [Georeferencing](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/06Georeferencing.md)
+* [Projections](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/05Projections.md)
 
 
 ### Week 7 | October 20 | Literary (& imaginary) mapping
@@ -138,7 +140,7 @@ Reading
 * Piatti, Barbara, and Lorenz Hurni. "Cartographies of fictional worlds." Cartographic Journal 48.4 (2011): 218-223.
 
 Tutorial 06
-* Annotation & Storytelling
+* [Georeferencing](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/06Georeferencing.md)
 
 
 ### Week 8 | October 27 | Historical Maps
@@ -146,7 +148,7 @@ Tutorial 06
 * Guldi, Jo. "The spatial turn in history". Available at: http://spatial.scholarslab.org/spatial-turn/the-spatial-turn-in-history/index.html
 
 Tutorial 07
-* Time series
+* [Annotation & Storytelling](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/07Annotation_Storytelling.md)
 
 
 ### Week 9 | November 3 
