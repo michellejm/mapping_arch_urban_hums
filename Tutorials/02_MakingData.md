@@ -2,14 +2,14 @@
 *Tutorial created by Juan Francisco Saldarriaga (jfs2118@columbia.edu) for the [Mapping for Architecture, Urbanism and the Humanities](https://github.com/juanfrans-courses/mapping_arch_hum) class at Columbia University. Edited by Michelle McSweeney for [Fall 2017](https://github.com/michellejm/mapping_arch_urban_hums).*
 
 In this tutorial, you will:
-* download 311 data for New York City 
-* create a categorical and a quantitative map of this data. 
+* download 311 data for New York City
+* create a categorical and a quantitative map of this data.
 * join the 311 data to another spatial dataset (census block groups) to aggregate it and display it based on its geographical location
 
 There are three basic steps in this process:
 1. select, filter and download 311 data
 2. add the 311 data to a map in qGIS
-3. classify the data so that it is correctly displayed on the map. 
+3. classify the data so that it is correctly displayed on the map.
 
 
 ### Datasets:
@@ -114,7 +114,7 @@ The last step in creating a qualitative map of the 311 data is a simple one: we 
 * Right-click on the 311_Data layer and choose `Properties`.
 * In the `Style` tab, change the drop-down menu that says `Single Symbol` to `Categorized` and then in the `Column` menu select `Descriptor` (this is the field we will symbolize).
 * Now click on the `Classify` button at the bottom and you will get all the different sub-categories.
-* Lastly, you should change the appearance of the dots: adjust their size, stroke and fill color like you did for the land use map.
+* Lastly, you should change the appearance of the dots: adjust their size, stroke and fill color<!--look for link to connect here?-->.
 * Once you've adjusted that, click 'OK'.
 * Finally, you need to change the appearance of the other layers, create a print composer, add a scale bar, legend, title, source and brief description, and export your map as a PDF file.
 
@@ -186,4 +186,3 @@ Once you are finished with this go ahead and adjust colors, strokes and layer or
 
 #### Deliverables
 Upload two (PDF) 311 data maps to Courseworks. They should both be of something different than 'noise' complaints. One should be a qualitative map, showing the location of each complaint, and the other should be a quantitative map, showing the number of complaints per census block group in New York City. Your maps should include proper legends, scale bars, titles, explanations and sources. Choose colors, line weights and fonts wisely.
-
