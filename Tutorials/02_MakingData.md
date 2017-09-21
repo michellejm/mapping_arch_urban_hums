@@ -42,7 +42,7 @@ Other datasets we will be using are:
 This contains: 
 * nybb - New York City boroughs. [here](http://www.nyc.gov/html/dcp/html/bytes/districts_download_metadata.shtml).
 * HYDRO - New York hydrography.  [here](https://data.cityofnewyork.us/Environment/Hydrography/drh3-e2fd).
-<!--* hydropol - U.S. Hydrographic features.  [here](http://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/files/publications/national_transportation_atlas_database/2014/polygon).-->
+* hydropol - U.S. Hydrographic features.  [here](http://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/files/publications/national_transportation_atlas_database/2014/polygon).
 * tl_2015_36_bg - New York State census block groups. [here](https://www.census.gov/cgi-bin/geo/shapefiles/index.php). Here you should download the census block groups for New York state for 2015.
 <!--* state - U.S. State Boundaries. Originally downloaded from [here](http://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/files/publications/national_transportation_atlas_database/2014/polygon)-->
 
