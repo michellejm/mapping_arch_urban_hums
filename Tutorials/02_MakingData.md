@@ -196,6 +196,8 @@ You may wish to change the projection of the whole project at this point. It sho
 
 ![Invert Selection](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef4-6.png)
 
+Be sure to enable 'On the fly' transformations
+
 ![Invert Selection](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef4-7.png)
 
 At this point, you can adjust colors, strokes and layer order. The water-related layers should be light grey with transparent boundaries, the classified 311 block group on top, and the boundaries should be transparent. Adjust the scale so there is a 0-0 scale that is white. The only other visible layers should be the water layers. You can, of course, style it as you wish, however.
