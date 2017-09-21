@@ -37,7 +37,7 @@ The dataset is a great resource for anyone studying New York. **Nevertheless, a 
 
 Other datasets we will be using are:
 
-**Most** Are available in the [Data/2-MakingData folder](https://github.com/michellejm/mapping_arch_urban_hums/tree/master/Data/2_MakingData)** You can download the [entire repository](https://github.com/michellejm/mapping_arch_urban_hums) and navigate to the folder, or  with the command line, [download the folder](https://stackoverflow.com/questions/9159894/download-specific-files-from-github-in-command-line-not-clone-the-entire-repo).
+**Most** Are available in the [Data/2-MakingData folder](https://github.com/michellejm/mapping_arch_urban_hums/tree/master/Data/2_MakingData). You can download the [entire repository](https://github.com/michellejm/mapping_arch_urban_hums) and navigate to the folder, or  with the command line, [download the folder](https://stackoverflow.com/questions/9159894/download-specific-files-from-github-in-command-line-not-clone-the-entire-repo).
 
 This contains: 
 * nybb - New York City boroughs. [here](http://www.nyc.gov/html/dcp/html/bytes/districts_download_metadata.shtml).
