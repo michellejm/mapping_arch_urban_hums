@@ -42,7 +42,7 @@ Other datasets we will be using are:
 This contains: 
 * nybb - New York City boroughs. [here](http://www.nyc.gov/html/dcp/html/bytes/districts_download_metadata.shtml).
 * HYDRO - New York hydrography.  [here](https://data.cityofnewyork.us/Environment/Hydrography/drh3-e2fd).
-* hydropol - U.S. Hydrographic features.  [here](http://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/files/publications/national_transportation_atlas_database/2014/polygon).
+<!--* hydropol - U.S. Hydrographic features.  [here](http://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/files/publications/national_transportation_atlas_database/2014/polygon).-->
 * tl_2015_36_bg - New York State census block groups. [here](https://www.census.gov/cgi-bin/geo/shapefiles/index.php). Here you should download the census block groups for New York state for 2015.
 <!--* state - U.S. State Boundaries. Originally downloaded from [here](http://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/files/publications/national_transportation_atlas_database/2014/polygon)-->
 
@@ -72,8 +72,8 @@ You should now see the data only for 'Noise' complaints created between the star
   * nybb
   * Roadbed
   * HYDRO (file may read as "Hydrography")
-  * hydropol (inside folder named "hydrolin", but use "hydropol.shp")
-* Organize your layers so that you have the roads on top, then water for New York, then boroughs and the last the water for the country.
+  <!--* hydropol (inside folder named "hydrolin", but use "hydropol.shp")-->
+* Organize your layers so that you have the roads on top, then water for New York, then boroughs <!--and the last the water for the country.-->
 * Now, to add the CSV file we downloaded, click on the `Add Delimited Text Layer` button on the top toolbar.
 
 ![Add CSV](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Fall_2016/Tutorials/Images/02_Data_Types_and_311/03_Add_CSV.png)
@@ -86,7 +86,10 @@ You should now see the data only for 'Noise' complaints created between the star
 
 ![CSV Menu](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Fall_2016/Tutorials/Images/02_Data_Types_and_311/04_CSV_Menu.png)
 * Once you click `OK` you might get a warning that says that x number of records were discarded because they didn't have geometry definitions. Click `Close`. There might be some records in the dataset that we downloaded that for some reason didn't include location data.
-* Next, qGIS will ask you to select a coordinate reference system (map projection) for this layer. Since we are adding this data based on the latitude and longitude information (decimal degrees, as opposed to feet) we need to select the `WGS 84`, which is the coordinate system that will correctly interpret this data <!--see note at line 106-->. You will find it under `Geographic Coordinate Systems`. You will find more information on this coordinate system [here](https://en.wikipedia.org/wiki/World_Geodetic_System). Once you select the correct coordinate system, your points will appear on the map.
+* Next, qGIS might ask you to select a coordinate reference system (map projection) for this layer. Since we are adding this data based on the latitude and longitude information (decimal degrees, as opposed to feet) we need to select the `WGS 84`, which is the coordinate system that will correctly interpret this data <!--see note at line 106-->. You will find it under `Geographic Coordinate Systems`. You will find more information on this coordinate system [here](https://en.wikipedia.org/wiki/World_Geodetic_System). Once you select the correct coordinate system, your points will appear on the map.
+* *If  you are not prompted, you can double check by double clicking on the layer and navigating to General, and EPSG 4326, WGS 84) should appear*
+![layer](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef4-2.png)
+
 * Even though your points are already on the map, this is just a temporary layer. If you remove the layer, you will need to go through the whole importing process to add them again. To avoid this, we need to export the layer as a shapefile.
 * However before you export it, you need to select only the records that have actual coordinate data. If you open the attribute table and look at the `Latitude` or `Longitude` fields you will notice that some entries don't have any geographic data (they are `Null`). We need, therefore, to select only the features that have geographic information and export only those:
   * Open the attribute table and click on the `Select features using an expression` button.
