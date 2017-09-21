@@ -125,7 +125,7 @@ The last step in creating a qualitative map of the 311 data is a simple one: we 
 * Now click on the `Classify` button at the bottom and you will get all the different sub-categories.
 * Lastly, you should change the appearance of the dots: adjust their size (make them smaller), stroke and fill color (if you wish, we will discuss this more in Tutorial 9)<!--maybe find link to describe this-->.
 * Once it is to your liking, click 'OK'.
-* Finally, change the appearance of the other layers (nybb should be an outline, the water should be blue, the backgroun of the roads shoul be grey or transparent).
+* Finally, change the appearance of the other layers (nybb should be an outline, the water should be blue or removed, the background of the roads should be grey or transparent).
 * Create a print composer, add a scale bar, legend, title, source and brief description, and export your map as a PDF file (Save this to upload it to Canvas) 
 
 #### Creating a Quantitative Map of 311 Data
@@ -151,7 +151,6 @@ Let's say you want to identify which census block group has the highest number o
   * Finally, to create a shapefile with only the selected features, right-click on the census block group layer and select `Save As...`. In the next menu choose the following settings:
     * Format: `ESRI Shapefile`
     * Save as: choose the right location and name your file 'NYC_BlkGrp'
-    * CRS: `EPSG:102718 - NAD_1983_StatePlane_New_York_Long_Island_FIPS_3104_Feet`<!--this is another instance of the CRS being different-->
     * Check `Save only selected features` - (this one is very important; if you don't check it you will just export a copy of your original layer with all the features, selected or not)
     * Uncheck `Skip attribute creation` - (you still want to retain the attributes associated with each point)
     * Check `Add saved file to map` - (so that once you export the layer, the layer is added to your map)
