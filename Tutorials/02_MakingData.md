@@ -128,7 +128,7 @@ The last step in creating a qualitative map of the 311 data is a simple one: we 
 * Finally, change the appearance of the other layers (nybb should be an outline, the water should be blue or removed, the background of the roads should be grey or transparent).
 * Create a print composer, add a scale bar, legend, title, source and brief description, and export your map as a PDF file (Save this to upload it to Canvas) 
 
-#### Creating a Quantitative Map of 311 Data
+## Creating a Quantitative Map of 311 Data
 Let's say you want to identify which census block group has the highest number of 311 noise complaints. To do this, you first have to join your 311 data to a layer containing the boundaries of New York City's census block groups.
 * First, add the census block group shapefile (tl_2015_36_bg) you downloaded from the census website.
 * Move this layer so that it's located below the HYDRO layer.
