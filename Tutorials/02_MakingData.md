@@ -72,8 +72,8 @@ You should now see the data only for 'Noise' complaints created between the star
   * nybb
   * Roadbed
   * HYDRO (file may read as "Hydrography")
-  <!--* hydropol (inside folder named "hydrolin", but use "hydropol.shp")-->
-* Organize your layers so that you have the roads on top, then water for New York, then boroughs <!--and the last the water for the country.-->
+  * hydropol (inside folder named "hydrolin", but use "hydropol.shp")
+* Organize your layers so that you have the roads on top, then water for New York, then boroughs and the last the water for the country.
 * Now, to add the CSV file we downloaded, click on the `Add Delimited Text Layer` button on the top toolbar.
 
 ![Add CSV](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Fall_2016/Tutorials/Images/02_Data_Types_and_311/03_Add_CSV.png)
@@ -191,7 +191,10 @@ There are a couple of ways of doing this: one option would be to clip the block 
 ![Query Builder](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Fall_2016/Tutorials/Images/02_Data_Types_and_311/10_Query_Builder.png)
 
 * Click `OK` in the 'Query Builder' and then `OK` again in the 'Properties' panel. Your map should now only show the census block groups that have land.
-At this point, you can adjust colors, strokes and layer order. And finally, create a print composer, add a legend, title, explanation, source and a scale bar, and export your map as a PDF file. Your final map should look something like this:
+
+At this point, you can adjust colors, strokes and layer order. The water-related layers should be light grey with transparent boundaries, 
+
+And finally, create a print composer, add a legend, title, explanation, source and a scale bar, and export your map as a PDF file. Your final map should look something like this:
 
 ![Final Map](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Fall_2016/Tutorials/Images/02_Data_Types_and_311/11_Final_Map.png)
 
