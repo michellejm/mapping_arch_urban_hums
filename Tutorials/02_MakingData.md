@@ -45,7 +45,7 @@ Other datasets we will be using are:
 
 ### Creating Noise Maps of 311 Data in New York City
 #### Downloading 311 Data
-The first step in this tutorial is to select, filter and download the 311 data. The [NYC Open Data portal](https://nycopendata.socrata.com/) is a great resource for data related to New York City and it provides an easy way of accessing 311 data. In it's search bar type "311" and it should take you to a list of datasets related to 311 data. The one we are looking for is called "311 Service Requests from 2010 to Present". Alternatively, you might see a big yellow icon at the top of this page related to 311; this will also take you to the dataset.
+The first step in this tutorial is to select, filter and download the 311 data. The [NYC Open Data portal](https://nycopendata.socrata.com/) is a great resource for data related to New York City and it provides an easy way of accessing 311 data. In it's search bar type "311" and it should take you to a list of datasets related to 311 data. The one we are looking for is called **"311 Service Requests from 2010 to Present"**. Alternatively, you might see a big yellow icon at the top of this page related to 311; this will also take you to the dataset.
 
 Once you've accessed the dataset you will see something like this:
 
