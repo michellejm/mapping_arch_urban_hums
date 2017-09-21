@@ -192,11 +192,11 @@ There are a couple of ways of doing this: one option would be to clip the block 
 
 * Click `OK` in the 'Query Builder' and then `OK` again in the 'Properties' panel. Your map should now only show the census block groups that have land.
 
-At this point, you can adjust colors, strokes and layer order. The water-related layers should be light grey with transparent boundaries, 
+At this point, you can adjust colors, strokes and layer order. The water-related layers should be light grey with transparent boundaries, the classified 311 block group on top, and the boundaries should be transparent. Adjust the scale so there is a 0-0 scale that is white. The only other visible layers should be the water layers. You can, of course, style it as you wish, however.
 
 And finally, create a print composer, add a legend, title, explanation, source and a scale bar, and export your map as a PDF file. Your final map should look something like this:
 
 ![Final Map](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Fall_2016/Tutorials/Images/02_Data_Types_and_311/11_Final_Map.png)
 
 #### Deliverables
-Upload your (PDF) 311 data map to Courseworks. Your map should include proper legends, scale bars, titles, explanations and sources.
+Upload your two (PDF) 311 data maps to Courseworks. Your map should include proper legends, scale bars, titles, explanations and sources.
