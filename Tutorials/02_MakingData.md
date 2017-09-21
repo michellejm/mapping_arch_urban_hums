@@ -155,6 +155,7 @@ Let's say you want to identify which census block group has the highest number o
     * Uncheck `Skip attribute creation` - (you still want to retain the attributes associated with each point)
     * Check `Add saved file to map` - (so that once you export the layer, the layer is added to your map)
   * Click `OK` and you should see a new layer with only New York City block groups.
+  * You can remove or hide the New York State blockgroups.
 * Now we need to join the 311 data to the census block groups and get a count of how many complaints are in each block group. To do this, click on `Vector` `Analysis Tools` `Points in Polygon...`
 
 ![Points in Polygon](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Fall_2016/Tutorials/Images/02_Data_Types_and_311/08_Points_in_Polygon.png)
