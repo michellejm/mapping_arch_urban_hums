@@ -45,15 +45,16 @@ Other datasets we will be using are:
 
 ### Creating Noise Maps of 311 Data in New York City
 #### Downloading 311 Data
-The first step in this tutorial is to select, filter and download the 311 data. The [NYC Open Data portal](https://nycopendata.socrata.com/) is a great resource for data related to New York City and it provides an easy way of accessing 311 data. In it's search bar type "311" and it should take you to a list of datasets related to 311 data. The one we are looking for is called **"311 Service Requests from 2010 to Present"**. Alternatively, you might see a big yellow icon at the top of this page related to 311; this will also take you to the dataset.
+The first step in this tutorial is to select, filter and download the 311 data. The [NYC Open Data portal](https://nycopendata.socrata.com/) is a great resource for data related to New York City and it provides an easy way of accessing 311 data. In it's search bar type "311" and it should take you to a list of datasets related to 311 data. The one we are looking for is called **"311 Service Requests from 2010 to Present"**. You may have to select 'View Dataset' 
+![311](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef4-1.png)
 
 Once you've accessed the dataset you will see something like this:
 
 ![311 Dataset](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Fall_2016/Tutorials/Images/02_Data_Types_and_311/01_311_Dataset.png)
-Here, we need to filter the database to download only the records regarding noise complaints for the first 6 months of 2016. You could attempt to download records for a longer period of time, but the files might get too large. To filter the data do the following:
+Here, we need to filter the database to download only the records regarding noise complaints for the first 6 months of 2017. You could attempt to download records for a longer period of time, but the files might get too large. To filter the data do the following:
 * On the right-hand panel, where it says "Filter", create a small query with the drop-down menus. Where it says `Unique Key`, change it to `Complaint Type`. Keep the `is` and then type in "Noise" in the space below (The query should read 'Complaint type is noise'. Make sure there is a check-mark next to the word 'Noise'. You will see how the dataset is filtered and you only get the complaints of type 'Noise'.
-* Next, click on `Add a New Filter Condition` and create another query that reads `Created Date` `is between` "01/1/2016 12:00:00 AM" and "07/1/2016 12:00:00 AM".
-You should now see the data only for 'Noise' complaints created between the start of 2016 and the end of June 2016.
+* Next, click on `Add a New Filter Condition` and create another query that reads `Created Date` `is between` "01/1/2017 12:00:00 AM" and "07/1/2016 12:00:00 AM".
+You should now see the data only for 'Noise' complaints created between the start of 2017 and the end of June 2017.
 * Your filters should look something like this:
 
 ![311 Filters](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Fall_2016/Tutorials/Images/02_Data_Types_and_311/02_Filters.png)
