@@ -113,7 +113,6 @@ You should now see the data only for 'Noise' complaints created between the star
   * In the menu choose the following:
     * Format: `ESRI Shapefile` - (this is the same format of our other layers)
     * Save as: choose the right location and name your file '311_Data'
-    * CRS: `EPSG:102718 - NAD_1983_StatePlane_New_York_Long_Island_FIPS_3104_Feet` - (this is the coordinate system we are working with and we want this layer to have the same one)<!--line 82, says crs = WGS 84, which is epsg:4326-->
     * Make sure you are checking the option that says `Save only selected features`, otherwise you will get an error.
     * Uncheck `Skip attribute creation` - (you still want to retain the attributes associated with each point)
     * Check `Add saved file to map` - (so that once you export the layer, the layer is added to your map)
