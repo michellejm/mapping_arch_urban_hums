@@ -36,15 +36,18 @@ The main dataset we will be using in this tutorial is based on 311 data. 311 is 
 The dataset is a great resource for anyone studying New York. **Nevertheless, a word of caution is necessary**: many people use this dataset to describe and analyze conditions in New York; however, the 311 data doesn't describe the city, it describes the complaints people file, it is not about the city, it is about the complaints, and even though the complaints might tell us something about the city, the distinction is crucial. Every dataset has its own biases and the 311 dataset has very strong ones: it collects data ONLY about the people who complain and ONLY about what they choose to complain about. Again, this dataset is much more about the complaints and the people who complain than about the conditions in the city. There is no 1 to 1 relationship between the 311 complaints and the conditions in the ground. That being said, though, it is still a great resource and very fun to play with. You can find out more about the 311 service [here](http://www1.nyc.gov/311/).
 
 Other datasets we will be using are:
-**Available in the [Data/2-MakingData folder](https://github.com/michellejm/mapping_arch_urban_hums/tree/master/Data/2_MakingData)** You can download the [entire repository here](https://github.com/michellejm/mapping_arch_urban_hums) and navigate to the folder, or if you are comfortable with the command line, [download the folder](https://stackoverflow.com/questions/9159894/download-specific-files-from-github-in-command-line-not-clone-the-entire-repo).
+
+**Most** Are available in the [Data/2-MakingData folder](https://github.com/michellejm/mapping_arch_urban_hums/tree/master/Data/2_MakingData)** You can download the [entire repository](https://github.com/michellejm/mapping_arch_urban_hums) and navigate to the folder, or  with the command line, [download the folder](https://stackoverflow.com/questions/9159894/download-specific-files-from-github-in-command-line-not-clone-the-entire-repo).
 
 This contains: 
-* nybb - New York City boroughs. Originally downloaded from [here](http://www.nyc.gov/html/dcp/html/bytes/districts_download_metadata.shtml).
-* Roadbed - New York roadbed. Originally downloaded [here](https://data.cityofnewyork.us/City-Government/Roadbed/xgwd-7vhd).
-* HYDRO - New York hydrography. Originally downloaded [here](https://data.cityofnewyork.us/Environment/Hydrography/drh3-e2fd).
-* hydropol - U.S. Hydrographic features. Originally downloaded from [here](http://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/files/publications/national_transportation_atlas_database/2014/polygon).
-* tl_2015_36_bg - New York State census block groups. Originally downloaded from [here](https://www.census.gov/cgi-bin/geo/shapefiles/index.php). Here you should download the census block groups for New York state for 2015.
+* nybb - New York City boroughs. [here](http://www.nyc.gov/html/dcp/html/bytes/districts_download_metadata.shtml).
+* HYDRO - New York hydrography.  [here](https://data.cityofnewyork.us/Environment/Hydrography/drh3-e2fd).
+* hydropol - U.S. Hydrographic features.  [here](http://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/files/publications/national_transportation_atlas_database/2014/polygon).
+* tl_2015_36_bg - New York State census block groups. [here](https://www.census.gov/cgi-bin/geo/shapefiles/index.php). Here you should download the census block groups for New York state for 2015.
 <!--* state - U.S. State Boundaries. Originally downloaded from [here](http://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/files/publications/national_transportation_atlas_database/2014/polygon)-->
+
+You **MUST** Download the roadbeds data from the site, it is too big to host on GitHub
+* Roadbed - New York roadbed. Download [here](https://data.cityofnewyork.us/City-Government/Roadbed/xgwd-7vhd).
 
 ### Creating Noise Maps of 311 Data in New York City
 #### Downloading 311 Data
