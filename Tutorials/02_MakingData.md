@@ -123,9 +123,10 @@ The last step in creating a qualitative map of the 311 data is a simple one: we 
 * Right-click on the 311_Data layer and choose `Properties`.
 * In the `Style` tab, change the drop-down menu that says `Single Symbol` to `Categorized` and then in the `Column` menu select `Descriptor` (this is the field we will symbolize).
 * Now click on the `Classify` button at the bottom and you will get all the different sub-categories.
-* Lastly, you should change the appearance of the dots: adjust their size, stroke and fill color<!--maybe find link to describe this-->.
-* Once you've adjusted that, click 'OK'.
-* Finally, you need to change the appearance of the other layers, create a print composer, add a scale bar, legend, title, source and brief description, and export your map as a PDF file.
+* Lastly, you should change the appearance of the dots: adjust their size (make them smaller), stroke and fill color (if you wish, we will discuss this more in Tutorial 9)<!--maybe find link to describe this-->.
+* Once it is to your liking, click 'OK'.
+* Finally, change the appearance of the other layers (nybb should be an outline, the water should be blue, the backgroun of the roads shoul be grey or transparent).
+* Create a print composer, add a scale bar, legend, title, source and brief description, and export your map as a PDF file (Save this to upload it to Canvas) 
 
 #### Creating a Quantitative Map of 311 Data
 Let's say you want to identify which census block group has the highest number of 311 noise complaints. To do this, you first have to join your 311 data to a layer containing the boundaries of New York City's census block groups.
