@@ -192,6 +192,12 @@ There are a couple of ways of doing this: one option would be to clip the block 
 
 * Click `OK` in the 'Query Builder' and then `OK` again in the 'Properties' panel. Your map should now only show the census block groups that have land.
 
+You may wish to change the projection of the whole project at this point. It should be in NAD83/New York Long Island EPSG 2263. Click on the project projection in the bottom right hand corner to open the project projection options.
+
+![Invert Selection](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef4-6.png)
+
+![Invert Selection](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef4-7.png)
+
 At this point, you can adjust colors, strokes and layer order. The water-related layers should be light grey with transparent boundaries, the classified 311 block group on top, and the boundaries should be transparent. Adjust the scale so there is a 0-0 scale that is white. The only other visible layers should be the water layers. You can, of course, style it as you wish, however.
 
 And finally, create a print composer, add a legend, title, explanation, source and a scale bar, and export your map as a PDF file. Your final map should look something like this:
