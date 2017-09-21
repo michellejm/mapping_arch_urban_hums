@@ -163,6 +163,7 @@ Let's say you want to identify which census block group has the highest number o
 * In the 'Points in Polygon' menu choose the following settings:
   * Input polygon vector layer: 'NYC_BlkGrp' - (this is the polygon layer we will join the points to)
   * Input point vector layer: '311_Data' - (this is the layer containing the points that will be joined)
+  * Input point later attribute to aggregate: Incident Z
   * Output count field name: '311_Count' - (this is a new field that will be created and will contain the count of points that were joined to each block group)
   * Output shapefile: '311_BlkGrp'
   * Check `Add result to canvas` so the new shapefile is added to the map.
