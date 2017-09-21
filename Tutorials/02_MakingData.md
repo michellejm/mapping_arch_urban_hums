@@ -103,7 +103,7 @@ You should now see the data only for 'Noise' complaints created between the star
   ![Select Null](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Fall_2016/Tutorials/Images/02_Data_Types_and_311/12_Selecting_Null.png)
 
   * Now click on the `Select` button at the bottom right corner.
-  * Once you've selected the `Null` records, close the 'Select by expression' window (click the `Close` button). At the top of the attribute table you should read that there are around 397 features selected.
+  * Once you've selected the `Null` records, close the 'Select by expression' window (click the `Close` button). At the top of the attribute table you should read that there are around 161 features selected.
   * Now, switch the selection, so that we only select the records that have correct geographic data. To do this press the `Invert Selection` button at the top:
 
   ![Invert Selection](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Fall_2016/Tutorials/Images/02_Data_Types_and_311/13_Invert_Selection.png)
