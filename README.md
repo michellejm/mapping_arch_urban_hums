@@ -80,8 +80,7 @@ Tutorial 01
 
 
 ### Week 3 | September 22 | Critical cartography
-Map
-TDB
+[Maps from class](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Extras/slides/week3-mauh-slides.pdf)
 
 Reading
 * Harley, John Brian. "Deconstructing the map." Cartographica: The international journal for geographic information and geovisualization 26.2 (1989): 1-20.
