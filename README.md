@@ -105,13 +105,14 @@ Reading
 Tutorial 03
 * [Using the census](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/03CensusData.md)
 
-### Week 5 | October 6 | Humanistic Geography
+### Week 5 | October 6 | Literary (& imaginary) Geography
 Maps
+* Selections from Solnit
 
 Reading
-* Drucker, Johanna. "Humanities approaches to graphical display." Digital Humanities Quarterly 5.1 (2011): 1-21.
-* Dear, Michael. "Geocreativity". In GeoHumanities: Art, History, Text at the Edge of Place, ed. Michael Dear (2011) 
-* Mitchell, Peta. "‘The stratified record upon which we set our feet’: The spatial turn and the multilayering of history, geography, and geology," in (2011): 71-83.
+* Solnit, Rebecca, and Joshua Jelly-Schapiro. "Centers and Edges." Nonstop Metropolis: A New York City Atlas. Univ of California Press, 2016.
+* kanarinka. "The City Formerly Known as Cambridge: A Institute for Infinitely Small Things." Truth and Accountability in Geographic and Historical Visualizations. Routledge, 2011.
+* Piatti, Barbara, and Lorenz Hurni. "Cartographies of fictional worlds." Cartographic Journal 48.4 (2011): 218-223.
 
 Tutorial 04
 * [Vector analysis tools](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/04AnalysisTools.md)
@@ -123,20 +124,20 @@ Map
 Reading
 * Furman, Mark. "Mapping the Digital Empire: Google Earth and the process of postmodern cartography." New Media and Society, 2010. 
 * Monmonier, Mark. "Elements of the Map" How to lie with maps. University of Chicago Press, 2014. 
-
+* Monmonier, Mark. "The Peters Projection Controversy" Drawing the line: tales of maps and cartocontroversy
 
 Tutorial 05
 * [Projections](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/05Projections.md)
 
 
-### Week 7 | October 20 | Literary (& imaginary) mapping
+### Week 7 | October 20 | Humanistic mapping
 Maps
-* Selections from Solnit
 
 Reading
-* Solnit, Rebecca, and Joshua Jelly-Schapiro. "Centers and Edges." Nonstop Metropolis: A New York City Atlas. Univ of California Press, 2016.
-* kanarinka. "The City Formerly Known as Cambridge: A Institute for Infinitely Small Things." Truth and Accountability in Geographic and Historical Visualizations. Routledge, 2011.
-* Piatti, Barbara, and Lorenz Hurni. "Cartographies of fictional worlds." Cartographic Journal 48.4 (2011): 218-223.
+
+* Drucker, Johanna. "Humanities approaches to graphical display." Digital Humanities Quarterly 5.1 (2011): 1-21.
+* Dear, Michael. "Geocreativity". In GeoHumanities: Art, History, Text at the Edge of Place, ed. Michael Dear (2011) 
+* Mitchell, Peta. "‘The stratified record upon which we set our feet’: The spatial turn and the multilayering of history, geography, and geology," in (2011): 71-83.
 
 Tutorial 06
 * [Georeferencing](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/06Georeferencing.md)
