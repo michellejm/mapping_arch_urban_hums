@@ -99,6 +99,7 @@ Map
 TBD
 
 Reading
+* Benedict Anderson, [Census Map Museum](http://www.haussite.net/haus.0/SCRIPT/txt2001/01/a_censu.HTML)
 * Lisa Gitelman “Introduction” in “Raw Data” Is an Oxymoron, ed. Lisa Gitelman (Cambridge, Massachusetts ; London, England: The MIT Press, 2013), 1-15.
 * Knigge, LaDona, and Meghan Cope. "Grounded visualization: integrating the analysis of qualitative and quantitative data through grounded theory and visualization." Environment and Planning A 38.11 (2006): 2021-2037.
 
