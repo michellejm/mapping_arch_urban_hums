@@ -7,7 +7,7 @@ Census data is often one of the most mapped datasets, and there are good reasons
 However, if not handled properly, mapping census data can be difficult and even problematic. Not only do you need to be able to correctly choose the right geographical level of analysis and download the right datasets, but you also need to be able to join these tables to existing shapefiles and symbolize them correctly. This tutorial will guide you through the process of downloading both the geographical boundaries and the census data, bringing them both into qGIS and joining them, and properly symbolizing it.
 
 ### Datasets:
-This tutorial deals with two main datasets, both provided by the U.S. Census Bureau. The first one is the geographic boundaries of the census tracts and the second one will be census data itself in table form. 
+This tutorial deals with two main datasets, both provided by the U.S. Census Bureau. The first one is the geographic boundaries of the census tracts and the second one will be census data itself in table form.
 * nybb - New York City boroughs. Originally downloaded from [here](http://www.nyc.gov/html/dcp/html/bytes/districts_download_metadata.shtml).
 * HYDRO - New York hydrography. Originally downloaded [here](https://data.cityofnewyork.us/Environment/Hydrography/drh3-e2fd).
 * hydropol - U.S. Hydrographic features. Originally downloaded from [here](http://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/files/publications/national_transportation_atlas_database/2014/polygon).
@@ -78,9 +78,9 @@ Finally, click on `Download` and make sure you are selecting 'Comma delimited (.
 ### Formatting Census Data
 To bring census data into qGIS, we need to re-format the table, so that we can join it to its geographic boundaries. This is a two step process: first, we will format the actual table in Excel, Google Spreadsheet or a simple text editor and, second, we will create a .csvt file, which will tell qGIS the exact format for each of the fields in the table.
 
-As with many things GIS, there are multiple ways of formatting the data. In our case we could do it using Excel, a Google Docs Sheet or a simple text editor. Here, we will do it with Excel and a text editor. 
+As with many things GIS, there are multiple ways of formatting the data. Here, we will give instructions for doing it with either Excel or a text editor (you don't need to do both).
 
-The  advantage of using Excel (or Google Docs) is that if you need to, you can add and **calculate** new fields; for example, in our case, you can calculate what percentage of the total population was foreign born and add that as a field (you could also do that inside qGIS). However, if you were to do that in a text editor, you would need to manually calculate the value. On the other hand, doing the re-formating through a text editor means that you can control the format of the data much more and that you won't have any problems with Excel auto-converting your data into other types, for example, from text into numbers, etc.
+Their are advantages and disadvantages to both methods. The  advantage of using Excel (or Google Docs) is that if you need to, you can add and **calculate** new fields; for example, in our case, you can calculate what percentage of the total population was foreign born and add that as a field (you could also do that inside qGIS). However, if you were to do that in a text editor, you would need to manually calculate the value. On the other hand, doing the re-formating through a text editor means that you can control the format of the data much more and that you won't have any problems with Excel auto-converting your data into other types, for example, from text into numbers, etc.
 
 Another great advantage of using Excel is that if you need to delete multiple fields (for example, all the margin of error fields), you can easily do it. Doing it in the text editor would be a nightmare. That being said, there are options, when downloading the data from American FactFinder, to not get the margin of error fields.
 
@@ -94,8 +94,8 @@ Another great advantage of using Excel is that if you need to delete multiple fi
   ![Excel Table](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Spring_2016/Tutorials/Images/03_Joining_Tables_and_Census_Data/06_Excel_Table.png)
 
   * We need to do two things: One, to rename the field names (header) and get rid of the second row (also a kind of header). And two, delete all the margin of error fields since we are not going to use them.
-  * QGIS field name requirements at: maximum 10 characters, no spaces, no punctuation (except - and _ ) and they must start with a letter, not a number.
-  * First, delete the margin of error columns. Just right-click on the column and select `Delete`. You should have 18 columns.
+  * QGIS has certain requirements for field names: maximum 10 characters, no spaces, no punctuation (except - and _ ) and they must start with a letter, not a number.
+  * First, delete the margin of error columns. Just right-click on the column and select `Delete`. You should have 18 columns (A–R) remaining.
   * Now, rename the fields in the following way:
     * GeoID
     * GeoID2
@@ -121,7 +121,7 @@ Another great advantage of using Excel is that if you need to delete multiple fi
   ![Excel Final Table](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Spring_2016/Tutorials/Images/03_Joining_Tables_and_Census_Data/07_Excel_Final_Table.png)
 
   * Finally, save your file as a .csv file. If you are on a Mac, make sure you save your file as `Windows Comma Separated (.csv)`. There seems to be a problem with the line endings when you save it as the default .csv format. I am saving my file as `B05002.csv`.
-  
+
 #### Re-formating in a text editor:
   * If you don't have Excel, or you don't want to use it, you can also re-format your file in a simple text editor. Here, I'll use the default Mac TextEdit application. You can also use your Windows Notepad or Sublime Text. As a side note, I highly recommend [Sublime Text](https://www.sublimetext.com/) as a text editor, we will use it later in the semester.
   * First, open the original census table ('ACS_14_5YR_B05002_with_ann.csv') with your text editor.
@@ -137,7 +137,7 @@ Another great advantage of using Excel is that if you need to delete multiple fi
 
   ![Text Edit Final Table](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Spring_2016/Tutorials/Images/03_Joining_Tables_and_Census_Data/09_Text_Edit_Final_Table.png)
 
-* Creating the .csvt file:
+#### Creating the .csvt file:
   * In both cases you need to create also a .csvt file. This file will tell qGIS exactly what type of data each of the fields is in. The different types of data your fields can take are:
     * String - Represents text
     * Integer - Represents whole numbers
@@ -146,7 +146,7 @@ Another great advantage of using Excel is that if you need to delete multiple fi
     * Time - Time in the format HH:MM:SS+nn
     * DateTime - Date and time in the format YYYY-MM-DD HH:MM:SS+nn
   * So, for every column we need to specify what type the data is in.
-  * In your text editor, open a new file.
+  * For this step you will need to use a text editor. In your text editor, open a new file.
   * Now, for every field, write the type of data it takes in quotation marks. So, for the Excel file, where we don't have the margin of error fields you would write: `"String","String","String","Integer","Integer","Integer","Integer","Integer","Integer","Integer","Integer","Integer","Integer","Integer","Integer","Integer","Integer","Integer"` Note that every item is separated by a comma and that the first three fields, even though they seem like they are numbers, are actually text fields. This is very important, since we are going to use those fields to join our census table to the census boundaries, which also contain those fields as text. If we have one file with text and another with integers or real numbers, the program won't be able to match it.
   * If you are working on Mac's TextEdit you need to format your file as 'Plain Text'. To do this click on `Format` and then `Make Plain Text`. This will change your file from an .rtf to a simple .txt.
   * Save your file with the same name as the table but with a different extension. It is important to do this so that qGIS understands that this .csvt file corresponds to the other .csv or .txt file. In both Windows Notepad and in Mac TextEdit you need to manually type the extension (.csvt) and in TextEdit you need to un-check the option that says 'If no extension is provided, use .txt'.
@@ -280,5 +280,4 @@ Once you are finished with this go ahead and adjust colors, strokes and layer or
 ![Final Map](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Spring_2016/Tutorials/Images/03_Joining_Tables_and_Census_Data/22_Final_Map.png)
 
 #### Deliverables
-Upload your (PDF) map to Canvas. Your map should include a legend, scale bar, title, explanation and source. 
-
+Upload your (PDF) map to Canvas. Your map should include a legend, scale bar, title, explanation and source.
