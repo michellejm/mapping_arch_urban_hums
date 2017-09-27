@@ -36,24 +36,31 @@ The main dataset we will be using in this tutorial is based on 311 data. 311 is 
 The dataset is a great resource for anyone studying New York. **Nevertheless, a word of caution is necessary**: many people use this dataset to describe and analyze conditions in New York; however, the 311 data doesn't describe the city, it describes the complaints people file, it is not about the city, it is about the complaints, and even though the complaints might tell us something about the city, the distinction is crucial. Every dataset has its own biases and the 311 dataset has very strong ones: it collects data ONLY about the people who complain and ONLY about what they choose to complain about. Again, this dataset is much more about the complaints and the people who complain than about the conditions in the city. There is no 1 to 1 relationship between the 311 complaints and the conditions in the ground. That being said, though, it is still a great resource and very fun to play with. You can find out more about the 311 service [here](http://www1.nyc.gov/311/).
 
 Other datasets we will be using are:
-* nybb - New York City boroughs. Originally downloaded from [here](http://www.nyc.gov/html/dcp/html/bytes/districts_download_metadata.shtml).
-* Roadbed - New York roadbed. Originally downloaded [here](https://data.cityofnewyork.us/City-Government/Roadbed/xgwd-7vhd).
-* HYDRO - New York hydrography. Originally downloaded [here](https://data.cityofnewyork.us/Environment/Hydrography/drh3-e2fd).
-* hydropol - U.S. Hydrographic features. Originally downloaded from [here](http://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/files/publications/national_transportation_atlas_database/2014/polygon).
-* tl_2015_36_bg - New York State census block groups. Originally downloaded from [here](https://www.census.gov/cgi-bin/geo/shapefiles/index.php). Here you should download the census block groups for New York state for 2015.
-* state - U.S. State Boundaries. Originally downloaded from [here](http://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/files/publications/national_transportation_atlas_database/2014/polygon)
+
+**Most** Are available in the [Data/2-MakingData folder](https://github.com/michellejm/mapping_arch_urban_hums/tree/master/Data/2_MakingData). You can download the [entire repository](https://github.com/michellejm/mapping_arch_urban_hums) and navigate to the folder, or  with the command line, [download the folder](https://stackoverflow.com/questions/9159894/download-specific-files-from-github-in-command-line-not-clone-the-entire-repo).
+
+This contains: 
+* nybb - New York City boroughs. [here](http://www.nyc.gov/html/dcp/html/bytes/districts_download_metadata.shtml).
+* HYDRO - New York hydrography.  [here](https://data.cityofnewyork.us/Environment/Hydrography/drh3-e2fd).
+* hydropol - U.S. Hydrographic features.  [here](http://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/files/publications/national_transportation_atlas_database/2014/polygon).
+* tl_2015_36_bg - New York State census block groups. [here](https://www.census.gov/cgi-bin/geo/shapefiles/index.php). Here you should download the census block groups for New York state for 2015.
+<!--* state - U.S. State Boundaries. Originally downloaded from [here](http://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/files/publications/national_transportation_atlas_database/2014/polygon)-->
+
+You **MUST** Download the roadbeds data from the site, it is too big to host on GitHub
+* Roadbed - New York roadbed. Download [here](https://data.cityofnewyork.us/City-Government/Roadbed/xgwd-7vhd).
 
 ### Creating Noise Maps of 311 Data in New York City
 #### Downloading 311 Data
-The first step in this tutorial is to select, filter and download the 311 data. The [NYC Open Data portal](https://nycopendata.socrata.com/) is a great resource for data related to New York City and it provides an easy way of accessing 311 data. In it's search bar type "311" and it should take you to a list of datasets related to 311 data. The one we are looking for is called "311 Service Requests from 2010 to Present". Alternatively, you might see a big yellow icon at the top of this page related to 311; this will also take you to the dataset.
+The first step in this tutorial is to select, filter and download the 311 data. The [NYC Open Data portal](https://nycopendata.socrata.com/) is a great resource for data related to New York City and it provides an easy way of accessing 311 data. In it's search bar type "311" and it should take you to a list of datasets related to 311 data. The one we are looking for is called **"311 Service Requests from 2010 to Present"**. You may have to select 'View Dataset' 
+![311](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef4-1.png)
 
 Once you've accessed the dataset you will see something like this:
 
 ![311 Dataset](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Fall_2016/Tutorials/Images/02_Data_Types_and_311/01_311_Dataset.png)
-Here, we need to filter the database to download only the records regarding noise complaints for the first 6 months of 2016. You could attempt to download records for a longer period of time, but the files might get too large. To filter the data do the following:
+Here, we need to filter the database to download only the records regarding noise complaints for the first 6 months of 2017. You could attempt to download records for a longer period of time, but the files might get too large. To filter the data do the following:
 * On the right-hand panel, where it says "Filter", create a small query with the drop-down menus. Where it says `Unique Key`, change it to `Complaint Type`. Keep the `is` and then type in "Noise" in the space below (The query should read 'Complaint type is noise'. Make sure there is a check-mark next to the word 'Noise'. You will see how the dataset is filtered and you only get the complaints of type 'Noise'.
-* Next, click on `Add a New Filter Condition` and create another query that reads `Created Date` `is between` "01/1/2016 12:00:00 AM" and "07/1/2016 12:00:00 AM".
-You should now see the data only for 'Noise' complaints created between the start of 2016 and the end of June 2016.
+* Next, click on `Add a New Filter Condition` and create another query that reads `Created Date` `is between` "01/1/2017 12:00:00 AM" and "07/1/2016 12:00:00 AM".
+You should now see the data only for 'Noise' complaints created between the start of 2017 and the end of June 2017.
 * Your filters should look something like this:
 
 ![311 Filters](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Fall_2016/Tutorials/Images/02_Data_Types_and_311/02_Filters.png)
@@ -79,7 +86,10 @@ You should now see the data only for 'Noise' complaints created between the star
 
 ![CSV Menu](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Fall_2016/Tutorials/Images/02_Data_Types_and_311/04_CSV_Menu.png)
 * Once you click `OK` you might get a warning that says that x number of records were discarded because they didn't have geometry definitions. Click `Close`. There might be some records in the dataset that we downloaded that for some reason didn't include location data.
-* Next, qGIS will ask you to select a coordinate reference system (map projection) for this layer. Since we are adding this data based on the latitude and longitude information (decimal degrees, as opposed to feet) we need to select the `WGS 84`, which is the coordinate system that will correctly interpret this data <!--see note at line 106-->. You will find it under `Geographic Coordinate Systems`. You will find more information on this coordinate system [here](https://en.wikipedia.org/wiki/World_Geodetic_System). Once you select the correct coordinate system, your points will appear on the map.
+* Next, qGIS might ask you to select a coordinate reference system (map projection) for this layer. Since we are adding this data based on the latitude and longitude information (decimal degrees, as opposed to feet) we need to select the `WGS 84`, which is the coordinate system that will correctly interpret this data <!--see note at line 106-->. You will find it under `Geographic Coordinate Systems`. You will find more information on this coordinate system [here](https://en.wikipedia.org/wiki/World_Geodetic_System). Once you select the correct coordinate system, your points will appear on the map.
+* *If  you are not prompted, you can double check by double clicking on the layer and navigating to General, and EPSG 4326, WGS 84) should appear*
+![layer](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef4-2.png)
+
 * Even though your points are already on the map, this is just a temporary layer. If you remove the layer, you will need to go through the whole importing process to add them again. To avoid this, we need to export the layer as a shapefile.
 * However before you export it, you need to select only the records that have actual coordinate data. If you open the attribute table and look at the `Latitude` or `Longitude` fields you will notice that some entries don't have any geographic data (they are `Null`). We need, therefore, to select only the features that have geographic information and export only those:
   * Open the attribute table and click on the `Select features using an expression` button.
@@ -93,17 +103,16 @@ You should now see the data only for 'Noise' complaints created between the star
   ![Select Null](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Fall_2016/Tutorials/Images/02_Data_Types_and_311/12_Selecting_Null.png)
 
   * Now click on the `Select` button at the bottom right corner.
-  * Once you've selected the `Null` records, close the 'Select by expression' window (click the `Close` button). At the top of the attribute table you should read that there are around 397 features selected.
+  * Once you've selected the `Null` records, close the 'Select by expression' window (click the `Close` button). At the top of the attribute table you should read that there are around 161 features selected.
   * Now, switch the selection, so that we only select the records that have correct geographic data. To do this press the `Invert Selection` button at the top:
 
-  ![Invert Selection](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Fall_2016/Tutorials/Images/02_Data_Types_and_311/13_Invert_Selection.png)
+  ![Invert Selection](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef4-3.png)
 
   * Now you should have all the records that have latitude and longitude selected and we can proceed to export them as a shapefile.
   * Close the attribute table, right-click on the 311 layer and select `Save As...`
   * In the menu choose the following:
     * Format: `ESRI Shapefile` - (this is the same format of our other layers)
     * Save as: choose the right location and name your file '311_Data'
-    * CRS: `EPSG:102718 - NAD_1983_StatePlane_New_York_Long_Island_FIPS_3104_Feet` - (this is the coordinate system we are working with and we want this layer to have the same one)<!--line 82, says crs = WGS 84, which is epsg:4326-->
     * Make sure you are checking the option that says `Save only selected features`, otherwise you will get an error.
     * Uncheck `Skip attribute creation` - (you still want to retain the attributes associated with each point)
     * Check `Add saved file to map` - (so that once you export the layer, the layer is added to your map)
@@ -114,11 +123,12 @@ The last step in creating a qualitative map of the 311 data is a simple one: we 
 * Right-click on the 311_Data layer and choose `Properties`.
 * In the `Style` tab, change the drop-down menu that says `Single Symbol` to `Categorized` and then in the `Column` menu select `Descriptor` (this is the field we will symbolize).
 * Now click on the `Classify` button at the bottom and you will get all the different sub-categories.
-* Lastly, you should change the appearance of the dots: adjust their size, stroke and fill color<!--maybe find link to describe this-->.
-* Once you've adjusted that, click 'OK'.
-* Finally, you need to change the appearance of the other layers, create a print composer, add a scale bar, legend, title, source and brief description, and export your map as a PDF file.
+* Lastly, you should change the appearance of the dots: adjust their size (make them smaller), stroke and fill color (if you wish, we will discuss this more in Tutorial 9)<!--maybe find link to describe this-->.
+* Once it is to your liking, click 'OK'.
+* Finally, change the appearance of the other layers (nybb should be an outline, the water should be blue or removed, the background of the roads should be grey or transparent).
+* Create a print composer, add a scale bar, legend, title, source and brief description, and export your map as a PDF file (Save this to upload it to Canvas) 
 
-#### Creating a Quantitative Map of 311 Data
+## Creating a Quantitative Map of 311 Data
 Let's say you want to identify which census block group has the highest number of 311 noise complaints. To do this, you first have to join your 311 data to a layer containing the boundaries of New York City's census block groups.
 * First, add the census block group shapefile (tl_2015_36_bg) you downloaded from the census website.
 * Move this layer so that it's located below the HYDRO layer.
@@ -141,11 +151,11 @@ Let's say you want to identify which census block group has the highest number o
   * Finally, to create a shapefile with only the selected features, right-click on the census block group layer and select `Save As...`. In the next menu choose the following settings:
     * Format: `ESRI Shapefile`
     * Save as: choose the right location and name your file 'NYC_BlkGrp'
-    * CRS: `EPSG:102718 - NAD_1983_StatePlane_New_York_Long_Island_FIPS_3104_Feet`<!--this is another instance of the CRS being different-->
     * Check `Save only selected features` - (this one is very important; if you don't check it you will just export a copy of your original layer with all the features, selected or not)
     * Uncheck `Skip attribute creation` - (you still want to retain the attributes associated with each point)
     * Check `Add saved file to map` - (so that once you export the layer, the layer is added to your map)
   * Click `OK` and you should see a new layer with only New York City block groups.
+  * You can remove or hide the New York State blockgroups.
 * Now we need to join the 311 data to the census block groups and get a count of how many complaints are in each block group. To do this, click on `Vector` `Analysis Tools` `Points in Polygon...`
 
 ![Points in Polygon](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Fall_2016/Tutorials/Images/02_Data_Types_and_311/08_Points_in_Polygon.png)
@@ -153,6 +163,7 @@ Let's say you want to identify which census block group has the highest number o
 * In the 'Points in Polygon' menu choose the following settings:
   * Input polygon vector layer: 'NYC_BlkGrp' - (this is the polygon layer we will join the points to)
   * Input point vector layer: '311_Data' - (this is the layer containing the points that will be joined)
+  * Input point later attribute to aggregate: Incident Z
   * Output count field name: '311_Count' - (this is a new field that will be created and will contain the count of points that were joined to each block group)
   * Output shapefile: '311_BlkGrp'
   * Check `Add result to canvas` so the new shapefile is added to the map.
@@ -172,6 +183,7 @@ Lastly, we need to hide the census block groups that fall outside of the New Yor
 There are a couple of ways of doing this: one option would be to clip the block group layer using the borough layer, in order to get rid of the census block groups that fall outside the boroughs. However, this option would permanently modify the block group layer and, if at any point the borough boundaries don't align perfectly with the block groups (which is entirely possible), the geometry of those block groups would be changed too. The best option then is to hide the block groups that fall inside the water and conveniently enough there is a field in the block group attribute table that has a specific value for these features.
 * First, open the attribute table of the 311_BlkGroup layer. You will notice that there is a field called 'ALAND' and another called 'AWATER'. 'ALAND' one has a unique identifier for each of the block groups that has some land area; 'AWATER' has an identifier for those block groups that have some water. There problem is that some block groups have both water and land. So we will only show those block groups where the 'ALAND' field does not equal 0, meaning that they have some land.
 * To do this we will create a 'Feature subset'. Open the layer properties and go to the `General` tab. At the bottom of this tab you will see the 'Provider Feature filter' panel. Go to the bottom of this panel and click on the `Query Builder` button. This query builder will work in a similar way as the 'Selection by attributes' query builder.
+![querybuilder](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef4-5.png)
 * In the 'Fields' panel you will see the 'ALAND' field. Double-click on this to make it appear in the bottom panel ('Provider specific filter expression').
 * Now add '!= 0' to the expression. ('!=' means 'does not equal').
 * Your expression should look something like this:
@@ -180,9 +192,19 @@ There are a couple of ways of doing this: one option would be to clip the block 
 
 * Click `OK` in the 'Query Builder' and then `OK` again in the 'Properties' panel. Your map should now only show the census block groups that have land.
 
-Once you are finished with this go ahead and adjust colors, strokes and layer order. And finally, create a print composer, add a legend, title, explanation, source and a scale bar, and export your map as a PDF file. Your final map should look something like this:
+You may wish to change the projection of the whole project at this point. It should be in NAD83/New York Long Island EPSG 2263. Click on the project projection in the bottom right hand corner to open the project projection options.
+
+![Invert Selection](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef4-6.png)
+
+Be sure to enable 'On the fly' transformations
+
+![Invert Selection](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef4-7.png)
+
+At this point, you can adjust colors, strokes and layer order. The water-related layers should be light grey with transparent boundaries, the classified 311 block group on top, and the boundaries should be transparent. Adjust the scale so there is a 0-0 scale that is white. The only other visible layers should be the water layers. You can, of course, style it as you wish, however.
+
+And finally, create a print composer, add a legend, title, explanation, source and a scale bar, and export your map as a PDF file. Your final map should look something like this:
 
 ![Final Map](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Fall_2016/Tutorials/Images/02_Data_Types_and_311/11_Final_Map.png)
 
 #### Deliverables
-Upload your (PDF) 311 data map to Courseworks. Your map should include proper legends, scale bars, titles, explanations and sources.
+Upload your two (PDF) 311 data maps to Courseworks. Your map should include proper legends, scale bars, titles, explanations and sources.

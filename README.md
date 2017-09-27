@@ -80,8 +80,7 @@ Tutorial 01
 
 
 ### Week 3 | September 22 | Critical cartography
-Map
-TDB
+[Maps from class](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Extras/slides/week3-mauh-slides.pdf)
 
 Reading
 * Harley, John Brian. "Deconstructing the map." Cartographica: The international journal for geographic information and geovisualization 26.2 (1989): 1-20.
@@ -100,19 +99,21 @@ Map
 TBD
 
 Reading
-* Daniel Rosenberg, “Data Before the Fact,” in “Raw Data” Is an Oxymoron, ed. Lisa Gitelman (Cambridge, Massachusetts ; London, England: The MIT Press, 2013), 15–40.
+* Benedict Anderson, [Census Map Museum](http://www.haussite.net/haus.0/SCRIPT/txt2001/01/a_censu.HTML)
+* Lisa Gitelman “Introduction” in “Raw Data” Is an Oxymoron, ed. Lisa Gitelman (Cambridge, Massachusetts ; London, England: The MIT Press, 2013), 1-15.
 * Knigge, LaDona, and Meghan Cope. "Grounded visualization: integrating the analysis of qualitative and quantitative data through grounded theory and visualization." Environment and Planning A 38.11 (2006): 2021-2037.
 
 Tutorial 03
 * [Using the census](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/03CensusData.md)
 
-### Week 5 | October 6 | Humanistic Geography
+### Week 5 | October 6 | Literary (& imaginary) Geography
 Maps
+* Selections from Solnit
 
 Reading
-* Drucker, Johanna. "Humanities approaches to graphical display." Digital Humanities Quarterly 5.1 (2011): 1-21.
-* Dear, Michael. "Geocreativity". In GeoHumanities: Art, History, Text at the Edge of Place, ed. Michael Dear (2011) 
-* Mitchell, Peta. "‘The stratified record upon which we set our feet’: The spatial turn and the multilayering of history, geography, and geology," in (2011): 71-83.
+* Solnit, Rebecca, and Joshua Jelly-Schapiro. "Centers and Edges." Nonstop Metropolis: A New York City Atlas. Univ of California Press, 2016.
+* kanarinka. "The City Formerly Known as Cambridge: A Institute for Infinitely Small Things." Truth and Accountability in Geographic and Historical Visualizations. Routledge, 2011.
+* Piatti, Barbara, and Lorenz Hurni. "Cartographies of fictional worlds." Cartographic Journal 48.4 (2011): 218-223.
 
 Tutorial 04
 * [Vector analysis tools](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/04AnalysisTools.md)
@@ -124,20 +125,20 @@ Map
 Reading
 * Furman, Mark. "Mapping the Digital Empire: Google Earth and the process of postmodern cartography." New Media and Society, 2010. 
 * Monmonier, Mark. "Elements of the Map" How to lie with maps. University of Chicago Press, 2014. 
-
+* Monmonier, Mark. "The Peters Projection Controversy" Drawing the line: tales of maps and cartocontroversy
 
 Tutorial 05
 * [Projections](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/05Projections.md)
 
 
-### Week 7 | October 20 | Literary (& imaginary) mapping
+### Week 7 | October 20 | Humanistic mapping
 Maps
-* Selections from Solnit
 
 Reading
-* Solnit, Rebecca, and Joshua Jelly-Schapiro. "Centers and Edges." Nonstop Metropolis: A New York City Atlas. Univ of California Press, 2016.
-* kanarinka. "The City Formerly Known as Cambridge: A Institute for Infinitely Small Things." Truth and Accountability in Geographic and Historical Visualizations. Routledge, 2011.
-* Piatti, Barbara, and Lorenz Hurni. "Cartographies of fictional worlds." Cartographic Journal 48.4 (2011): 218-223.
+
+* Drucker, Johanna. "Humanities approaches to graphical display." Digital Humanities Quarterly 5.1 (2011): 1-21.
+* Dear, Michael. "Geocreativity". In GeoHumanities: Art, History, Text at the Edge of Place, ed. Michael Dear (2011) 
+* Mitchell, Peta. "‘The stratified record upon which we set our feet’: The spatial turn and the multilayering of history, geography, and geology," in (2011): 71-83.
 
 Tutorial 06
 * [Georeferencing](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/06Georeferencing.md)

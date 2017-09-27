@@ -6,17 +6,25 @@ Census data is often one of the most mapped datasets, and there are good reasons
 
 However, if not handled properly, mapping census data can be difficult and even problematic. Not only do you need to be able to correctly choose the right geographical level of analysis and download the right datasets, but you also need to be able to join these tables to existing shapefiles and symbolize them correctly. This tutorial will guide you through the process of downloading both the geographical boundaries and the census data, bringing them both into qGIS and joining them, and properly symbolizing it.
 
+## Creating Place of Birth Maps with Census Data
+
 ### Datasets:
+<<<<<<< HEAD
 This tutorial deals with two main datasets, both provided by the U.S. Census Bureau. The first one is the geographic boundaries of the census tracts and the second one will be census data itself in table form.
+=======
+This tutorial deals with two main datasets, both provided by the U.S. Census Bureau. The first one is the geographic boundaries of the census tracts and the second one will be census data itself in table form.
+
+We will also use three shapefiles in the creation of this map (that we have used before):
+>>>>>>> 67d0299e961d7739d6ed5b97350a32b4c7aa32be
 * nybb - New York City boroughs. Originally downloaded from [here](http://www.nyc.gov/html/dcp/html/bytes/districts_download_metadata.shtml).
 * HYDRO - New York hydrography. Originally downloaded [here](https://data.cityofnewyork.us/Environment/Hydrography/drh3-e2fd).
 * hydropol - U.S. Hydrographic features. Originally downloaded from [here](http://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/files/publications/national_transportation_atlas_database/2014/polygon).
 
-### Creating Place of Birth Maps with Census Data
 #### Downloading Census Data
 The first step will be to download the 'empty' geography files for our unit of analysis (without census attributes, apart from unique identifiers). However, before doing this we need to decide what unit of analysis we will use.
 
 The [American Community Survey](https://www.census.gov/programs-surveys/acs/), which is the statistical survey we will be using, provides data at multiple geographic levels, all the way from the whole country to the block group (which in Manhattan can be anywhere between 1 and 4 city blocks). Some of the other geographic units of analysis include regions, states, counties and metropolitan statistical areas. However, not all the data comes at every geographical level, so in general, we will try to find the smallest unit of analysis available for our dataset. In our case, that will be the census tract level, which roughly corresponds to 8 Manhattan city blocks, or four block groups.
+
 
 The two images below show census block groups in orange and census tracts in blue over a portion of city blocks in Harlem.
 
@@ -24,7 +32,7 @@ The two images below show census block groups in orange and census tracts in blu
 
 ![Census Tracts](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Spring_2016/Tutorials/Images/03_Joining_Tables_and_Census_Data/02_Census_Tracts.png)
 
-To download the census tracts boundaries for New York State go [here](https://www.census.gov/cgi-bin/geo/shapefiles/index.php) and choose `2015` and `Census Tracts` and then `New York` and download.
+-To download the census tracts boundaries for New York State go [here](https://www.census.gov/cgi-bin/geo/shapefiles/index.php) and choose `2015` and `Census Tracts` and then `New York` and download.
 
 Once we have the 'empty' geography boundaries for the census tracts we need to download the actual data. For this we will use the [American FactFinder](http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml) which is one of the portals where you can download census data.
 
