@@ -82,6 +82,8 @@ The field names for `Bronx_Schools` are:
 
 #### Finding libraries near concentrations of Spanish speakers
 
+****THERE IS A BUG in versions 2.14 & 2.18, if you get the erro, "missing parameter value geometric predicate", skip to the next section (Schools and Libraries)****
+
 Now, we want to determine which libraries are located within census tracts where more than 65% of the population speaks Spanish. We are interested in determining which libraries might be well suited to receive additional resources to go towards multilingual programs.
 
 * **Open** the attribute table of the Bronx_Tracts layer and choose the `select using an expression` tool. Select census tracts where more than 65 percent of the population over 5 years old speaks Spanish. Your expression should look like this. Click `Select`. You should see that 56 features were selected. Close the attribute table.
