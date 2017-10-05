@@ -120,11 +120,9 @@ We will be creating a number of new layers during this portion of the exercise s
 
   * Set the buffer distance to 1320. The values in this field have the same units as the projection of your input datalayer and map project. Our map is projected in the NAD83 New York State Plane (Long Island) projection system whose units are in feet. To confirm this you can open the layer properties and inspect the coordinate reference system for the layer. Thus we choose 1320 feet because this is equivalent to 1/4 mile.
 
-  Note: If you are using QGIS 2.14 or 2.18, there is a bug that causes the *project* datum to revert back to the default (or actually to Clarke 1866). This means that it cannot be measured in feet, and must be measured in degrees. If you were doing this for a project that you intended to publish widely, you may have to downgrade your software to version 2.8, which is the last version I know of without the bug.
-
-  * To get around this, use .01 degree/km, so for 1/4 mile, we will make our input distance 0.00402336
-
-  * Save your new shapefile as buffers/2k_mine_buffers.shp  
+  * Note: If you are using QGIS 2.14 or 2.18, there is a bug that might cause the *project* datum to revert back to the default (or actually to Clarke 1866). This means that it cannot be measured in feet, and must be measured in degrees. (If you were doing this for a project that you intended to publish widely, you may have to downgrade your software to version 2.8, which is the last version I know of without the bug.)
+      - If when you use 1320 (feet), you don't get the circles (pictured below), you'll have to use a different measurement. To get around this, use the conversion of .01 degree/km, so for 1/4 mile, we will make our input distance `0.00402336` you'll have to use a different measurement. To get around this, use the conversion of .01 degree/km, so for 1/4 mile, we will make our input distance `0.00402336`
+     <!-- * Save your new shapefile as buffers/2k_mine_buffers.shp-->  
 
   * Browse in order to save the Output shapefile as ‘BX_Library_QuarterMiBuffer` within your 3_AnalyzingData\Process folder.
 
