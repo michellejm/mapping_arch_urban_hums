@@ -9,13 +9,10 @@ However, if not handled properly, mapping census data can be difficult and even 
 ## Creating Place of Birth Maps with Census Data
 
 ### Datasets:
-<<<<<<< HEAD
-This tutorial deals with two main datasets, both provided by the U.S. Census Bureau. The first one is the geographic boundaries of the census tracts and the second one will be census data itself in table form.
-=======
+
 This tutorial deals with two main datasets, both provided by the U.S. Census Bureau. The first one is the geographic boundaries of the census tracts and the second one will be census data itself in table form.
 
 We will also use three shapefiles in the creation of this map (that we have used before):
->>>>>>> 67d0299e961d7739d6ed5b97350a32b4c7aa32be
 * nybb - New York City boroughs. Originally downloaded from [here](http://www.nyc.gov/html/dcp/html/bytes/districts_download_metadata.shtml).
 * HYDRO - New York hydrography. Originally downloaded [here](https://data.cityofnewyork.us/Environment/Hydrography/drh3-e2fd).
 * hydropol - U.S. Hydrographic features. Originally downloaded from [here](http://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/files/publications/national_transportation_atlas_database/2014/polygon).
@@ -282,6 +279,35 @@ Finally, to create the last version of our map we need to normalize our data by 
   * 0.4 - 0.5
   * 0.5 - 0.85
 * Once you've classified correctly your data, click `OK` and make sure your map makes sense.
+
+
+***************NEW as of 9/29***********************
+
+In the original directions, this step was missing. It is taken directly from [Tutorial 2](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/02_MakingData.md)
+Lastly, we need to hide the census block groups that fall outside of the New York City borough boundaries. If you look closely at the census block group layer, you will see that there are some block groups that fall inside the Hudson River and that shouldn't be included in our map.
+
+There are a couple of ways of doing this: one option would be to clip the block group layer using the borough layer, in order to get rid of the census block groups that fall outside the boroughs. However, this option would permanently modify the block group layer and, if at any point the borough boundaries don't align perfectly with the block groups (which is entirely possible), the geometry of those block groups would be changed too. The best option then is to hide the block groups that fall inside the water and conveniently enough there is a field in the block group attribute table that has a specific value for these features.
+* First, open the attribute table of the CensusData layer. You will notice that there is a field called 'ALAND' and another called 'AWATER'. 'ALAND' one has a unique identifier for each of the block groups that has some land area; 'AWATER' has an identifier for those block groups that have some water. There problem is that some block groups have both water and land. So we will only show those block groups where the 'ALAND' field does not equal 0, meaning that they have some land.
+* To do this we will create a 'Feature subset'. Open the layer properties and go to the `General` tab. At the bottom of this tab you will see the 'Provider Feature filter' panel. Go to the bottom of this panel and click on the `Query Builder` button. This query builder will work in a similar way as the 'Selection by attributes' query builder.
+![querybuilder](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef4-5.png)
+* In the 'Fields' panel you will see the 'ALAND' field. Double-click on this to make it appear in the bottom panel ('Provider specific filter expression').
+* Now add '!= 0' to the expression. ('!=' means 'does not equal').
+* Your expression should look something like this:
+
+![Query Builder](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Fall_2016/Tutorials/Images/02_Data_Types_and_311/10_Query_Builder.png)
+
+* Click `OK` in the 'Query Builder' and then `OK` again in the 'Properties' panel. Your map should now only show the census block groups that have land.
+
+You may wish to change the projection of the whole project at this point. It should be in NAD83/New York Long Island EPSG 2263. Click on the project projection in the bottom right hand corner to open the project projection options.
+
+![Invert Selection](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef4-6.png)
+
+Be sure to enable 'On the fly' transformations
+
+![Invert Selection](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef4-7.png)
+
+
+*************END NEW*****************
 
 Once you are finished with this go ahead and adjust colors, strokes and layer order. And finally, create a print composer, add a legend, title, explanation, source and a scale bar, and export your map as a PDF file. Your final map should look something like this:
 

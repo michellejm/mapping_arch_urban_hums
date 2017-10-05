@@ -82,6 +82,8 @@ The field names for `Bronx_Schools` are:
 
 #### Finding libraries near concentrations of Spanish speakers
 
+****THERE IS A BUG in versions 2.14 & 2.18, if you get the error, "missing parameter value geometric predicate", skip to the next section (Schools and Libraries)****
+
 Now, we want to determine which libraries are located within census tracts where more than 65% of the population speaks Spanish. We are interested in determining which libraries might be well suited to receive additional resources to go towards multilingual programs.
 
 * **Open** the attribute table of the Bronx_Tracts layer and choose the `select using an expression` tool. Select census tracts where more than 65 percent of the population over 5 years old speaks Spanish. Your expression should look like this. Click `Select`. You should see that 56 features were selected. Close the attribute table.
@@ -109,13 +111,27 @@ Now we will depart from questions about language and instead ask a series of que
 To answer the first question, we will create a 1/4 mile buffer around the libraries.
 
 We will be creating a number of new layers during this portion of the exercise so in order to save all of these layers produced in the process of our analysis lets first create a new folder within the MappingfortheUrbanHumanities/Class_Data/3_AnalyzingData folder and name it `Process`. Save all new layers created during this exercise in this folder.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9b26d5eb841448671e3e28bb51e4ddf1d2249a28
 ##### Creating Buffers
 * On your menu bar navigate to `Vector`>`Geoprocessing Tools` > `Buffer(s)`.
 ![buffer](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/AnalyzingData01/05_Buffer.png)
 
   * Choose Bronx_Libraries as your input vector layer – this sets which layer the buffers are drawn around.
 
+<<<<<<< HEAD
   * Set the buffer distance to 1320. Note: the values in this field have the same units as the projection of your input datalayer and map project. Our map is projected in the NAD83 New York State Plane (Long Island) projection system whose units are in feet. To confirm this you can open the layer properties and inspect the coordinate reference system for the layer. Thus we choose 1320 feet because this is equivalent to 1/4 mile.
+=======
+  * Set the buffer distance to 1320. The values in this field have the same units as the projection of your input datalayer and map project. Our map is projected in the NAD83 New York State Plane (Long Island) projection system whose units are in feet. To confirm this you can open the layer properties and inspect the coordinate reference system for the layer. Thus we choose 1320 feet because this is equivalent to 1/4 mile. 
+  
+  Note: If you are using QGIS 2.14 or 2.18, there is a bug that causes the *project* datum to revert back to the default (or actually to Clarke 1866). This means that it cannot be measured in feet, and must be measured in degrees. If you were doing this for a project that you intended to publish widely, you may have to downgrade your software to version 2.8, which is the last version I know of without the bug. 
+  
+  * To get around this, use .01 degree/km, so for 1/4 mile, we will make our input distance 0.00402336
+
+  * Save your new shapefile as buffers/2k_mine_buffers.shp  
+>>>>>>> 9b26d5eb841448671e3e28bb51e4ddf1d2249a28
 
   * Browse in order to save the Output shapefile as ‘BX_Library_QuarterMiBuffer` within your 3_AnalyzingData\Process folder.
 
