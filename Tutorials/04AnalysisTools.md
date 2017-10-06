@@ -277,11 +277,11 @@ Note: that proportional split estimation assumes that the attribute you are esti
 Now we will compare the total estimated population within the buffers to the original rough population estimate we made at the beginning of this exercise using the select by location tool.
 
 * Navigate to `Vector`>`Analysis`>`Basic Statistics`.
-* Select Pop2014_es as the Target field and note the Sum: 371,042.94
-* Repeat for the population field for the entire census tract Pop2014 and note the difference: 983,821
+* Select Pop2014_es as the Target field and note the Sum
+* Repeat for the population field for the entire census tract Pop2014 and note the difference 
 
 #### What to Submit
-Please send an image (can be a simple screenshot) of the clipped buffers and the proportional split population estimate.
+Please send an image (can be a simple screenshot) of the clipped buffers (the stage where it is just circles, and what number you got for the proportional split population estimate.
 
 
 ______________________________________________________________________________________________________________
