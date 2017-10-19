@@ -96,7 +96,7 @@ Tutorial 02
 
 ### Week 4 | September 29 | Data
 Map
-TBD
+* [Slides from class](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Extras/slides/week4-mauh-slides.pdf)
 
 Reading
 * Benedict Anderson, [Census Map Museum](http://www.haussite.net/haus.0/SCRIPT/txt2001/01/a_censu.HTML)
@@ -121,6 +121,7 @@ Tutorial 04
 ### Week 6 | October 13 | Projections
 Map
 * [AuthaGraph Map](https://www.wired.com/2016/11/weird-globe-folding-map-isnt-perfect-close/)
+* [slides from class](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Extras/slides/week6-mauh-slides.pdf)
 
 Reading
 * Furman, Mark. "Mapping the Digital Empire: Google Earth and the process of postmodern cartography." New Media and Society, 2010. 
