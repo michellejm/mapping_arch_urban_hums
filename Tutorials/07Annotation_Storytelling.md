@@ -412,6 +412,8 @@ L.geoJSON(geojsonFeature, {
 
 ```
 
+Submit your working FOLDER to courseworks. 
+
 ______________________________________________________________________________________________________________
 
 Tutorial written by Michelle McSweeney for *[Conflict Urbanism: InfraPolitics](https://github.com/michellejm/ConflictUrbanism-InfraPolitics)*. Adapted from the tutorial written by Dare Brawley, for *Mapping for the Urban Humanities*, which was based on the tutorial prepared by Michelle McSweeney for the Spring 2017 course, *Conflict Urbanism: Language Justice* offered at Columbia Univeristy through the Center for Spatial Research. 
