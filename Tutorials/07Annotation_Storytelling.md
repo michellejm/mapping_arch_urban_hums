@@ -243,7 +243,7 @@ L.tileLayer('http://tile.stamen.com/toner-lite/{z}/{x}/{y}.png',
 		minZoom: 1
 		}).addTo(map);
 ```
-4. *Save* your index.html document. Open your browser and refresh the `localhost:8000` page. You should see the following: ![img](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef3-12.png)
+4. *Save* your index.html document. Open your browser and refresh the `localhost:8000` page. You should see the following: ![img](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef3-14.png)
 
 ##### Add GeoreferencedHistorical Map
 
