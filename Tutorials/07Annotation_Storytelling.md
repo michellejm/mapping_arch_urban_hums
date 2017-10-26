@@ -11,13 +11,13 @@ With this exercise you will learn how to create a basic web-based map using the 
 
 #### Notes on the data:
 
-You will use the 1909 "Island of Bombay" map that you georeferenced in the previous exercise. If you have not already done so please complete the [Georeferencing](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/Tutorials/02_Georeferencing.md) exercise.
+You will use the 1909 "Island of Bombay" map that you georeferenced in the previous exercise. If you have not already done so please complete the [Georeferencing](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/06Georeferencing.md) exercise.
 
 You will also need a list of events surrounding the plague. This was compiled from a variety of sources. Some events include links to images as well.
 
 #### The Premise
 
-In this exercise, you will annotate your map with data we have collected about the plague events in Bombay. Using the GeoTiff you created in [Tutorial 02](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/Tutorials/02_Georeferencing.md) and a spreadsheet of events from the years before and after the plague, you will create an animated timeline telling the story of how the plague started a series of events that amplified the housing shortage in Bombay and gave the colonial powers the opportunity to gain more control over individuals' lives.
+In this exercise, you will annotate your map with data we have collected about the plague events in Bombay. Using the GeoTiff you created in [Tutorial 06](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/06Georeferencing.md) and a spreadsheet of events from the years before and after the plague, you will create an animated timeline telling the story of how the plague started a series of events that amplified the housing shortage in Bombay and gave the colonial powers the opportunity to gain more control over individuals' lives.
 
 For context lets take a look at what this final map will look like. It is visible [here](https://michellejm.github.io/ConflictUrbanism-InfraPolitics/Data/3_AnnotationWebMap/)
 
@@ -35,7 +35,7 @@ Should you look into creating webmaps further you'll fine that many of these too
 
 ### To Begin
 
-We have provided the basic folder structure that you will need to create your webmap, in the `Data/6-7_Georeferencing-Annotation` folder downloaded with this repository. Lets review the structure before we proceed. It contains three folders and one file: 
+We have provided the basic folder structure that you will need to create your webmap, in the `Data/6-7_Georeferencing-Annotation` folder downloaded with this repository. Lets review the structure before we proceed. It contains three folders and one file:
 
 * `css`
 * `data`
@@ -51,7 +51,7 @@ In addition there are folders for images: `img` and `data`. These two folders wi
 For the purposes of this tutorial we have already prepared all of the data for you. However the following steps outline how you would go about exporting data from QGIS to include in an online map if you were starting from scratch.
 
 **Exporting and Formatting a Georeferenced Historical Map**
-1. *Find the latitude and longitude* coordinates of your image. We will need these later on when we import the historical map into our web map. Enable the `Lat Lon Tools` plugin in QGIS.
+1. *Find the latitude and longitude* coordinates of your image. We will need these later on when we import the historical map into our web map. Enable the `Lat Lon Tools` plugin in QGIS by selecting "Manage and Install Plugins" under the "Plugins" dropdown and searching for "Lat Lon Tools." Select and click "Install Plugin."
 
 ![blank](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef3-1.png)
 
@@ -62,7 +62,7 @@ Then use it to select the **top left** and **bottom right** corners of your rast
 
 ![instructions image](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities_2017/blob/master/Tutorials/Images/Webmaps/01_NoData.png)
 
-3. *Export Historical Map as a GeoTiff.* Right click on the georeferenced map in the layers panel and select Save as. Then in the save as dialog box select `Rendered image` as the output mode. Select `GTiff` as the format. Name  your image and save it in the appropriate directory. (You must select `Rendered image` in order to export a version of your map without the black border)
+3. *Export Historical Map as a GeoTiff.* Right click on the georeferenced map in the layers panel and select Save as. Then in the save as dialog box select `Rendered image` as the output mode. Select `GTiff` as the format, and make sure the CRS is set to `Project CRS (EPSG:4326 - WGS 84)`. Name  your image and save it in the appropriate directory. (You must select `Rendered image` in order to export a version of your map without the black border)
 
 ![blank](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef3-2.png)
 
@@ -105,7 +105,7 @@ First you need to make sure you have Python installed. Check if you have Python 
 	* Scroll to the bottom of options, and click the drop-down selection that reads "Add python.exe to Path" (it should have a red "X" by default)
 	* Select the option that reads "Entire feature will be installed on local hard drive"
 5. Follow the prompts on the rest of the setup, allow the installation to finish. When it's done, it will tell you, and python is now installed on your computer and available to use.
-6. To test that python was installed, open the Command Prompt application, and enter `python --version`. It should read `Python 2.12.XX`.
+6. To test that python was installed, open the Command Prompt application, and enter `python --version`. It should read `Python 2.7.XX`.
 
 ### (Mac) Set up a local server
 
@@ -147,7 +147,7 @@ We will run a local server from our computers. The details of this are far beyon
 	It will look something like this:
 	![img](https://github.com/CenterForSpatialResearch/NYCDHWeek/blob/master/Images/localhost.png)
 
-3. Return to your browser window (Chrome, Firefox, or Safari) and type `http:\\localhost` in the navigation bar. You should see an empty webpage.
+3. Return to your browser window (Chrome, Firefox, or Safari) and type `http:\\localhost` in the navigation bar (you may have to type `http:\\localhost:8000`). You should see an empty webpage.
 
 ### Deconstructing The Webmap
 
@@ -184,13 +184,15 @@ HTML documents are constructed through using what are called tags that are denot
 
 As mentioned above we are using the Leaflet.js javascript library to create a webmap. Javascript is a language, like HTML and CSS, that all modern web browsers understand naturally.
 
-Leaflet is a set of commands built with javascript that allow us to make webmaps relativley easily.
+Leaflet is a set of commands built with javascript that allow us to make webmaps relatively easily.
 
 We will also use another library called jQuery.js that will allow us to import the points and road outlines data.
 
 It is helpful to think of these libraries as sets of commands that our program can draw on.
 
 Because Leaflet and jQuery are both libraries we need to include them in our html document so that they can be referenced by our program when it runs in the browser. These libraries are really just also sets of text files, contained in javascript and css file types.
+
+The included index.html is already written out for you, but below is a walkthrough of what each line is doing.
 
 We include them in the header section: `<head>`
 
@@ -204,12 +206,12 @@ We include them in the header section: `<head>`
 	`<script src="js/jquery-3.2.1.min.js">  </script>`
 5. *Set the size of your map.* Using CSS syntax we will set the size of the map to fill a full browser window:
 	`<style> #map{position: absolute; top:0; bottom:0; left:0; width: 100%;} </style>`
-6. *Close the <header> tag.*
+6. *Close the `<header>` tag.*
 
 #### Writing the Body
 
 Now we will move on to building the content of our map.
-Please note: `//` in front of a line means that the code is "commented out" and will not be read by the browser. As we go along, uncomment the code section by section.
+Please note: `//` in front of a line means that the code is "commented out" and will not be read by the browser. As we go along, uncomment the code section by section, meaning, remove the `//` from in front of each line, so that the browser reads it. There are some lines that should stay commented, however — if it reads like plain english (e.g. //link to the URL of the georeferenced historical map image), leave the `//` comment tags. (If you are unsure, the full, final code is listed at the end of this tutorial)
 
 1. *Open the <body> section.* `<body>`
 2. *Make a section for the map.* Make a `<div>` for the map, and call it map.
@@ -218,16 +220,13 @@ Please note: `//` in front of a line means that the code is "commented out" and 
 `var map = L.map('map').setView([18.966, 72.831], 12)`
 	* Javascript requires that all variables be labeled with 'var'.
 	* We are going to create a map var and use leaflet to initialize it. We need to give out map two parameters. First, the latitude/longitude for the center of our map, and the zoom level.
-	1. set `var map =`
-	2. When we call leaflet (i.e. access the leaflet library's set of commands), we use capital L  `L.map` to call Leaflet's map property.
-	*. Javascript (and therefore Leaflet) uses both dot notation and bracket notation, whenever there's a period between things in js, it's called dot notation, and you are "accessing the properties" of an "object" don't worry too much about this - it just means you are looking inside of that object to find a particular property.
-	4. '.setView([`var map = L.map('map').setView([18.966, 72.831], 12);': We set the view of the map by specifying the center point in latitude and longitude `[`var map = L.map('map').setView([18.966, 72.831], 12);`
-]`, as well as the zoom level: `12`.
+		1. set `var map =`
+		1. When we call leaflet (i.e. access the leaflet library's set of commands), we use capital L  `L.map` to call Leaflet's map property. Javascript (and therefore Leaflet) uses both dot notation and bracket notation, whenever there's a period between things in js, it's called dot notation, and you are "accessing the properties" of an "object" don't worry too much about this - it just means you are looking inside of that object to find a particular property.
+		1. `.setView`: We set the view of the map by specifying the center point in latitude and longitude `[18.966, 72.831]`, as well as the zoom level: `12`. In total: `var map = L.map('map').setView([18.966, 72.831], 12);`
 
-**Add Map Tiles**
+##### Add Map Tiles
 
 5. *Add background tile layers.* We are going to be using background tiles from [Open Street Map](http://wiki.openstreetmap.org/wiki/Tiles#cite_note-1) that have been styled by [Stamen Design](http://maps.stamen.com/#terrain/12/37.7706/-122.3782). There are a number of open source map tile providers out there and Stamen has some great versions.
-
 1. *Call the tileLayer property* from Leaflet, and pass it the webaddress of the map tiles we are using. `L.tileLayer('http://tile.stamen.com/toner-lite/{z}/{x}/{y}.png'`
 	* We could try switching to a different tile provider `'https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png'`
 2. *Pass the tileLayer some properties.*
@@ -237,28 +236,28 @@ Please note: `//` in front of a line means that the code is "commented out" and 
 3. *Add the tileLayer to the map.* Pass the .addTo property, and give it the map variable. `.addTo(map);`
 
 ```javascript
-`L.tileLayer('http://tile.stamen.com/toner-lite/{z}/{x}/{y}.png',
+L.tileLayer('http://tile.stamen.com/toner-lite/{z}/{x}/{y}.png',
 		{
 			attribution: 'Tiles from <a href="http://www.openstreetmap.org/">OSM style by Stamen Design</a>',
 		maxZoom: 19,
 		minZoom: 1
 		}).addTo(map);
 ```
-4. *Save* your index.html document. Open your browser and refresh the `localhost:8000` page. You should see the following:
-![img]()
+4. *Save* your index.html document. Open your browser and refresh the `localhost:8000` page. You should see the following: ![img](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef3-12.png)
 
-**Add GeoreferencedHistorical Map**
+##### Add GeoreferencedHistorical Map
+
 We will now embed the "Map of the Island of Bombay" published in 1909 that we georeferenced in the previous exercise.
 
 1. *Create a variable* that contains the url of the image, in this case the path to where is it stored in the directory for our webmap.
 `var imageUrl = 'data/referenced_mumbai.png';`
 2. *Create another variable* where you define the area that the image covers using two pairs of latitude and longitude coordinates for the top left and bottom right corners of your image. We found these coordinates using the `lat lon tools` plugin for QGIS when we were preparing the historical map raster earlier.
 `var imageBounds = [[19.1012196354, 72.7703713242], [18.8743642027, 72.9320741694]];`
-3. *Call Leaflet's .imageOverlay()* method pass it the two variable we just created, set the opacity of the map layer and add it to the map.
+3. *Call Leaflets .imageOverlay()* method pass it the two variable we just created, set the opacity of the map layer and add it to the map.
 `L.imageOverlay(imageUrl, imageBounds, {opacity: 0.8}).addTo(map);`
-4. *Save and then refresh your browser* and the 1902 map should appear.
+4. *Save and then refresh your browser* and the 1909 map should appear.
 
-**Define a new marker for the map**
+##### Define a new marker for the map
 
 1. Make a new variable and call it 'myIcon' and set it equal to a leaflet icon element with the properties
 	* iconUrl (where to find the little picture)
@@ -273,7 +272,8 @@ iconUrl: 'css/images/maps-mark.png',
 });
 ```
 
-**Add Points of Interest (or any geojson file)**
+##### Add Points of Interest (or any geojson file)
+
 Now we will add the file of points related to the plague.
 
 1. *Use the jQuery command, getJSON.* Use $ to call the jQuery library, just like Leaflet is **called** with L., jQuery is **called** with $.
@@ -285,18 +285,19 @@ Now we will add the file of points related to the plague.
 6. *Save and then refresh your browser,* the sites should be visible.
 
 ```javascript
-$.getJSON('data/plaguetimeline.geojson',function(plagueData){
   	$.getJSON('data/plaguetimeline.geojson',function(plagueData){
 	    	L.geoJson(plagueData, {
 	    	pointToLayer: function(feature, latlng) {
 		return L.marker(latlng, {
 		icon: myIcon});
 	},
-	    	// onEachFeature: onEachFeature,
+	    	onEachFeature: onEachFeature,
 	    	}).addTo(map);
 	    });
+
 ```
-**Add Interactivity to Points (or any geojson file)**
+
+##### Add Interactivity to Points (or any geojson file)
 We will now add popups for each of our road lines.
 
 2. *Call the leaflet function* `onEachFeature`. This must be defined for two parameters:  `feature` and `layer`. Whatever information we include in this function will be called once for each feature (basically each row) in our GeoJSON file.
