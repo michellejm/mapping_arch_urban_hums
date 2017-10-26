@@ -211,7 +211,7 @@ We include them in the header section: `<head>`
 #### Writing the Body
 
 Now we will move on to building the content of our map.
-Please note: `//` in front of a line means that the code is "commented out" and will not be read by the browser. As we go along, uncomment the code section by section, meaning, remove the `//` from in front of each line, so that the browser reads it. There are some lines that should stay commented, however — if it reads like plain english (e.g. //link to the URL of the georeferenced historical map image), leave the `//` comment tags. (If you are unsure, the full, final code is listed at the end of this tutorial)
+Please note: `//` in front of a line means that the code is "commented out" and will not be read by the browser. As we go along, uncomment the code section by section, meaning, remove the `//` from in front of each line, so that the browser reads it. There are some lines that should stay commented, however — if it reads like plain english (e.g. `//link to the URL of the georeferenced historical map image`), leave the `//` comment tags. (If you are unsure, the full, final code is listed at the end of this tutorial)
 
 1. *Open the <body> section.* `<body>`
 2. *Make a section for the map.* Make a `<div>` for the map, and call it map.
@@ -226,7 +226,7 @@ Please note: `//` in front of a line means that the code is "commented out" and 
 
 ##### Add Map Tiles
 
-5. *Add background tile layers.* We are going to be using background tiles from [Open Street Map](http://wiki.openstreetmap.org/wiki/Tiles#cite_note-1) that have been styled by [Stamen Design](http://maps.stamen.com/#terrain/12/37.7706/-122.3782). There are a number of open source map tile providers out there and Stamen has some great versions.
+1. *Add background tile layers.* We are going to be using background tiles from [Open Street Map](http://wiki.openstreetmap.org/wiki/Tiles#cite_note-1) that have been styled by [Stamen Design](http://maps.stamen.com/#terrain/12/37.7706/-122.3782). There are a number of open source map tile providers out there and Stamen has some great versions.
 1. *Call the tileLayer property* from Leaflet, and pass it the webaddress of the map tiles we are using. `L.tileLayer('http://tile.stamen.com/toner-lite/{z}/{x}/{y}.png'`
 	* We could try switching to a different tile provider `'https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png'`
 2. *Pass the tileLayer some properties.*
@@ -243,7 +243,7 @@ L.tileLayer('http://tile.stamen.com/toner-lite/{z}/{x}/{y}.png',
 		minZoom: 1
 		}).addTo(map);
 ```
-4. *Save* your index.html document. Open your browser and refresh the `localhost:8000` page. You should see the following: ![img](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef3-14.png)
+5. *Save* your index.html document. Open your browser and refresh the `localhost:8000` page. You should see the following: ![img](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef3-14.png)
 
 ##### Add GeoreferencedHistorical Map
 
@@ -300,7 +300,7 @@ Now we will add the file of points related to the plague.
 ##### Add Interactivity to Points (or any geojson file)
 We will now add popups for each of our road lines.
 
-2. *Call the leaflet function* `onEachFeature`. This must be defined for two parameters:  `feature` and `layer`. Whatever information we include in this function will be called once for each feature (basically each row) in our GeoJSON file.
+1. *Call the leaflet function* `onEachFeature`. This must be defined for two parameters:  `feature` and `layer`. Whatever information we include in this function will be called once for each feature (basically each row) in our GeoJSON file.
 3. *Define the action* we want called for each feature:
 	* If the plaguetimeline.geojson file has properties (attribute information) and has a column named `Event`
 	* Inside that variable store the value of the `Event` column in the plaguetimeline.geojson file.
@@ -321,9 +321,7 @@ L.geoJSON(geojsonFeature, {
 	onEachFeature: onEachFeature
 }).addTo(map);
 ```
-
-
-9. *Save your file and refresh* your browser.
+6. *Save your file and refresh* your browser.
 ![img](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Images/georef3-8.png)
 
 
