@@ -11,13 +11,13 @@ With this exercise you will learn how to create a basic web-based map using the 
 
 #### Notes on the data:
 
-You will use the 1909 "Island of Bombay" map that you georeferenced in the previous exercise. If you have not already done so please complete the [Georeferencing](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/06Georeferencing.md) exercise.
+You will use the 1909 "Island of Bombay" map that you georeferenced in the the [Georeferencing](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/06Georeferencing.md) exercise. Alternatively, you can use [this map](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Data/6-7_Georeferencing-Annotation/data/refmum.tif), click on 'View Raw' to download.
 
-You will also need a list of events surrounding the plague. This was compiled from a variety of sources. Some events include links to images as well.
+You will also need a list of events surrounding the plague. [This list](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Data/6-7_Georeferencing-Annotation/data/plague_timeline.csv) was compiled from a variety of sources. Some events include links to images as well. You can click 'View Raw' and then RightClick and SaveAs a CSV.
 
 #### The Premise
 
-In this exercise, you will annotate your map with data we have collected about the plague events in Bombay. Using the GeoTiff you created in [Tutorial 06](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/06Georeferencing.md) and a spreadsheet of events from the years before and after the plague, you will create an animated timeline telling the story of how the plague started a series of events that amplified the housing shortage in Bombay and gave the colonial powers the opportunity to gain more control over individuals' lives.
+In this exercise, you will annotate your map with data we have collected about the plague events in Bombay. Using the GeoTiff and a spreadsheet of events from the years before and after the plague, you will create a timeline telling the story of how the plague started a series of events that amplified the housing shortage in Bombay and gave the colonial powers the opportunity to gain more control over individuals' lives.
 
 For context lets take a look at what this final map will look like. It is visible [here](https://michellejm.github.io/ConflictUrbanism-InfraPolitics/Data/3_AnnotationWebMap/)
 
@@ -85,6 +85,21 @@ The points should appear on your map
 ## Building a Webmap
 
 Lets begin to make our webmap.
+
+
+Begin with setting up a local server.
+
+**PLUGIN for ALL COMPUTERS INSTRUCTIONS**
+
+If running a local server from the command line has not worked for you before or you don't want to go through the Terminal, or you are on a PC, please install [this Web Server plugin](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en) on Google Chrome. This plugin will allow you to view your page as if you were viewing it on the Internet. You MUST use Google Chrome to view your webmap. You will also use Google Chrome for the HTML Tutorial.
+
+When you launch the new app, you will be prompted to select a folder. Choose your mymap folder. Make a note of the address for your local server, in my case below, it is http://127.0.0.1:8887/
+
+![add](https://github.com/michellejm/ConflictUrbanism-InfraPolitics/blob/master/img/wp1.png)
+
+The mymap.html file should appear as a selection. Select that and you will have a blank screen.
+
+**ADVANCED for MAC INSTRUCTIONS**
 First you need to make sure you have Python installed. Check if you have Python installed and which version it is. We will be using Python to run a local server.
 
 ### (Mac) Check which Python version you have (if any)
@@ -92,20 +107,6 @@ First you need to make sure you have Python installed. Check if you have Python 
 1. Open a Terminal Window
 2. Type `$ python -V` hit 'Return'
 4. Make a note of which Python version you have, you will need it later.
-
-### (Windows) Check which Python version you have (if any)
-1. open Command Prompt
-2. type python --version hit 'Return'
-	* if python is installed something like this will appear
-	![img](https://github.com/CenterForSpatialResearch/NYCDHWeek/blob/master/Images/pythontest.png)
-	* if it isn't then a message stating that will appear
-	* if Python is installed make note of which version you have installed, you will need it later
-3. if python is not installed then go to [python.org](python.org) to download python. We recommend installing version 2.7.
-4. After downloading the installer, double-click to open it and follow the installation prompts, selecting the default settings until you get to the page that reads "Customize Python 2.7.XX"
-	* Scroll to the bottom of options, and click the drop-down selection that reads "Add python.exe to Path" (it should have a red "X" by default)
-	* Select the option that reads "Entire feature will be installed on local hard drive"
-5. Follow the prompts on the rest of the setup, allow the installation to finish. When it's done, it will tell you, and python is now installed on your computer and available to use.
-6. To test that python was installed, open the Command Prompt application, and enter `python --version`. It should read `Python 2.7.XX`.
 
 ### (Mac) Set up a local server
 
@@ -128,32 +129,15 @@ We will run a local server from our computers. The details of this are far beyon
 
 3. Return to your browser window (Chrome, Firefox, or Safari) and type `localhost` in the navigation bar. You should see an empty webpage.
 
-### (Windows) Set up a local server
-1. Open Command Prompt. Then navigate to the folder where you have saved your html file (directions below on how to "navigate"). In my case it is in Documents > MappingForTheUrbanHumanities_2017 > Class_Data >3_Webmaps. To navigate there, I type the following commands:
+### Check to see if it worked
 
-	* cd Documents
-	* cd MappingForTheUrbanHumanities_2017
-	* cd Class_Data
-	* cd 3_Webmaps
-
-2. If you have python 2 type:
-
-	* python -m SimpleHTTPServer
-
-3. If you have python 3 type:
-
-	* python -m http.server
-
-	It will look something like this:
-	![img](https://github.com/CenterForSpatialResearch/NYCDHWeek/blob/master/Images/localhost.png)
-
-3. Return to your browser window (Chrome, Firefox, or Safari) and type `http:\\localhost` in the navigation bar (you may have to type `http:\\localhost:8000`). You should see an empty webpage.
+3. Return to your browser window (Chrome, Firefox, or Safari) and type `http:\\localhost` in the navigation bar (you may have to type `http:\\localhost:8000` or copy/paste from the app's location). You should see an empty webpage.
 
 ### Deconstructing The Webmap
 
 We will break down the example map provided in the `index.html` file line by line. The full code for the example is also provided at the end of this tutorial.
 
-1. *open* the index.html file in the text editor of your choice.
+1. *open* the index.html file in the text editor of your choice (I suggest Sublime or Text Wrangler). Text Edit or Notepade are OK, too, but you won't get the helpful colourings, autofill, etc.
 
 #### Overall Structure
 
