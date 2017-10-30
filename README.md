@@ -153,7 +153,7 @@ Tutorial 07
 * [Annotation & Storytelling](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/07Annotation_Storytelling.md)
 
 
-### Week 9 | November 3 
+### Week 9 | November 3 - PROPOSAL DUE
 Midterm - presentations
 
 
@@ -164,18 +164,19 @@ Reading
 * Monmonier, Mark. "Map Generalization" How to lie with maps. University of Chicago Press, 2014.
 * Monmonier, Mark. "Blunders that Mislead" How to lie with maps. University of Chicago Press, 2014.
 
-Tutorial 08
-* Webmapping
 
-### Week 11 | November 17 | Cartography and Truth
-Map 
+### Week 11 | November 17 | Webmapping - MAP CRITIQUE DUE
 
-Reading
+In-class Tutorial on Webmapping, Leaflet & a basic introduction to Javascript
+
+Revisit [Annotation & Storytelling](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Tutorials/07Annotation_Storytelling.md)
+Add Distance Maps or Sliders (To Be Posted)
+
+
+Recommended
 * Wallace, Timothy R., and Charles van den Heuvel. "Truth and accountability in geographic and historical visualizations." The Cartographic Journal 42.2 (2005): 173-181.
-* Robinson, Arthur. "Nature of Cartography." Elements of Cartography. Wiley, 1995.
 
-Tutorial 09
-* Cartography - MAP CRITIQUE DUE
+* MAP CRITIQUE DUE
 
 
 ### THANKSGIVING BREAK - November 24
