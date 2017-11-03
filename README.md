@@ -157,15 +157,7 @@ Tutorial 07
 Midterm - presentations
 
 
-### Week 10 | November 10 | Map critique
-Maps
-
-Reading
-* Monmonier, Mark. "Map Generalization" How to lie with maps. University of Chicago Press, 2014.
-* Monmonier, Mark. "Blunders that Mislead" How to lie with maps. University of Chicago Press, 2014.
-
-
-### Week 11 | November 17 | Webmapping - MAP CRITIQUE DUE
+### Week 10 | November 10 | Webmapping
 
 In-class Tutorial on Webmapping, Leaflet & a basic introduction to Javascript
 
@@ -176,13 +168,22 @@ Add Distance Maps or Sliders (To Be Posted)
 Recommended
 * Wallace, Timothy R., and Charles van den Heuvel. "Truth and accountability in geographic and historical visualizations." The Cartographic Journal 42.2 (2005): 173-181.
 
-* MAP CRITIQUE DUE
+
+### Week 11 | November 17 | Map critique
+Maps
+
+Reading
+* Monmonier, Mark. "Map Generalization" How to lie with maps. University of Chicago Press, 2014.
+* Monmonier, Mark. "Blunders that Mislead" How to lie with maps. University of Chicago Press, 2014
+
 
 
 ### THANKSGIVING BREAK - November 24
 
-### Week 12 - December 1
+### Week 12 - December 1 - MAP CRITIQUE DUE
 Final project and technical assistance
+
+* MAP CRITIQUE DUE
 
 ### Week 13 - December 8 
 Final Project Presentations
