@@ -3,11 +3,11 @@ This is the second half of the Webmapping tutorial *if* we have time
 
 ### Outcomes
 
-1. Mumbai: Add a before/after slider to your map using Leaflet slider plugin ([example](http://www.nytimes.com/interactive/2011/03/13/world/asia/satellite-photos-japan-before-and-after-tsunami.html?_r=0))
+1. SLider: Add a before/after slider to your map using Leaflet slider plugin ([example](http://www.nytimes.com/interactive/2011/03/13/world/asia/satellite-photos-japan-before-and-after-tsunami.html?_r=0))
 
-2. Johannesburg: Select which layers to display using Leaflet layers control plugin
+2. Layers: Select which layers to display using Leaflet layers control plugin
 
-3. Medellín: Show distance metrics using the Route360 plugin 
+3.API Distance Mapping: Show distance metrics using the Route360 plugin 
 
 
 * You will make a map of distances based on travel time in Medellín. You will use the Route360 tool to make 2 maps of Medellín, a basic one showing the drivable distance in 5, 15, and 25 minutes. You will then make a second webmap with a scale bar and the outline of the city layered on top. You will export a geojson of this that you will then look at in QGIS and use for further analysis.
