@@ -1,8 +1,5 @@
 ## Webmaps
-
-This tutorial is formatted a little differently from the others. You will pick one of three projects to work on and work in groups of 1-3. 
-
-The city/project combination are designed around the maps we have already made. Unlike the GIS tutorials, this is not a step-by-step process, but rather, an opportunity to take what you've learned in the tutorials and use it to make a webmap. Regardless which city you are researching, you may wish to pick your project based on the map you plan to make rather than the city it is centered on.
+This is the second half of the Webmapping tutorial *if* we have time
 
 ### Outcomes
 
