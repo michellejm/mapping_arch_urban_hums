@@ -38,16 +38,15 @@ What are tiles?
 	5. Tiles are images. We will use url's to get tiles from other places on the internet. Essentially we will point to
 	the site to load the tiles for us. These sites are very stable, so there is little concern that your tiles will disappear. You could, in theory, make your own tiles and load them into your map from a static file. That is a very advanced technique.
 
+## Our Project
+We want to make a webmap that shows where the most refugees were resettled in the United States in 2014. We would like to color each state based on how many refugees were settled there, and drop pins on the city giving more information. This will be our starting point for making other webmaps if there is time.
 
 ### Collect the ingredients
 
-1. Download GeoJSONs from the GitHub
-2. Normally, you would export these from QGIS
+1. Download the [data and files from the GitHub](https://github.com/michellejm/mapping_arch_urban_hums/tree/master/Data/09_InClass_Leaflet/mymap)
+2. Normally, you would export your GeoJSONs from QGIS and find the libraries online.
 
 ## Building a Webmap
-
-Lets begin to make our webmap.
-
 
 Begin with setting up a local server.
 
@@ -101,7 +100,8 @@ We will run a local server from our computers. The details of this are far beyon
 
 ### Write the HTML Document
 
-The code is explained and then provided in sections after each explanation. 
+You have a handout with the complete code. You can see it [here](https://github.com/michellejm/mapping_arch_urban_hums/blob/master/Data/09_InClass_Leaflet/mymap/index.html). We are going to go line-by-line. The code is explained and then provided in sections after each explanation. 
+
 We will begin with the *Header*
 
 1. Import the stylesheets
@@ -417,6 +417,8 @@ You can add your map 2 ways.
 
 
 That's it! Congratulations! You have made a webmap with Leaflet!
+
+If we have time, we will work on Advanced versions
 
 
 __________________________________________________________________________________________
